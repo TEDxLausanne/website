@@ -6,3 +6,4 @@ sites/*/private
 private-files
 sites/*/files
 .sass-cache
+node_modules

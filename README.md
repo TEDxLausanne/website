@@ -7,19 +7,11 @@ To build and watch your files, make sure you are in the root of the project. The
 
 ```shell
 $ npm install
-$ bower install
+```
 
-# Build all assets
-$ gulp
-
-# On you production environment, you need to run this:
-$ gulp clean;
-$ gulp vendors;
-$ gulp styles --production;
-$ gulp scripts;
-
-# Watch files as you go
-$ gulp serve
+# Rebuild from ../tedxlausanne-styleguide
+```shell
+$ gulp build
 ```
 
 # Deploy
