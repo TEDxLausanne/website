@@ -36,4 +36,4 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/css'));
 });
 
-gulp.task('build', ['styles', 'scripts', 'build-images']);
+gulp.task('default', ['styles', 'scripts', 'build-images']);
