@@ -9,7 +9,7 @@ set :stages,          %w(dev prod)
 set :scm,            "git"
 set :repository,     "git@github.com:TEDxLausanne/website.git"
 
-set :domain,         "staging.tedxlausanne.org"
+set :domain,         "tedxlausanne.alwaysdata.net"
 
 set :user,           "tedxlausanne"
 set :group,          "tedxlausanne"

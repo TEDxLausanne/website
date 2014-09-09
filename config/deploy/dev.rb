@@ -1,3 +1,3 @@
-set :branch,    "dev"
+set :branch,    "master"
 
-set :deploy_to, "/home/tedxlausanne/www/staging.tedxlausanne.org"
+set :deploy_to, "/www/tedxlausanne.alwaysdata.net"
