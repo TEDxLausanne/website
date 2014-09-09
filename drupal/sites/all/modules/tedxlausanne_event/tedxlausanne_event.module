@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the TEDxLausanne Event feature.
+ */
+
+include_once 'tedxlausanne_event.features.inc';
