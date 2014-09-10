@@ -5,6 +5,7 @@ set :app_path,        "drupal"
 set :shared_children, ['drupal/sites/default/files','private-files']
 set :shared_files,    ['drupal/sites/default/settings.php']
 set :stages,          %w(dev prod)
+set :host,            'antistatique.alwaysdata.net'
 
 set :scm,            "git"
 set :repository,     "git@github.com:TEDxLausanne/website.git"
@@ -29,26 +30,17 @@ after "deploy:update", "deploy:cleanup"
 # Be more verbose by uncommenting the following line
 #logger.level = Logger::MAX_LEVEL
 
-# set :theme_path, Pathname.new('drupal/sites/all/themes/tedxlausanne/assets')
-# set :local_app_path, Pathname.new('/Users/mfh/as-dev/tedxlausanne-website')
-# set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
+set :theme_path, Pathname.new('drupal/sites/all/themes/tedxlausanne')
+set :local_app_path, Pathname.new('/Users/mfh/as-dev/tedxlausanne-website')
+set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
 
-# namespace :deploy do
-#     task :compile_assets do
-#         run_locally do
-#             within fetch(:local_theme_path) do
-#                 execute :gulp
-#             end
-#         end
-#     end
+namespace :deploy do
+  desc 'Copy assets to server'
+  task :copy_assets do
+      run_locally("scp -r #{local_app_path}/#{theme_path}/assets #{user}@#{host}:#{current_path}/#{theme_path}")
+  end
+end
 
-#     task :copy_assets do
-#         invoke 'deploy:compile_assets'
-#         on roles(:web) do
-#             upload! fetch(:local_theme_path).join('dist'), release_path.join(fetch(:theme_path)), recursive: true
-#         end
-#     end
-# end
 
 namespace :hotfix do
     task :fix_permissions do
@@ -57,5 +49,5 @@ namespace :hotfix do
     end
 end
 
-# before "deploy:updated", "deploy:copy_assets"
+after "deploy:create_symlink", "deploy:copy_assets"
 before "deploy:cleanup", "hotfix:fix_permissions"
