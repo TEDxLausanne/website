@@ -36,6 +36,7 @@ dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = update
 dependencies[] = user
+dependencies[] = youtube
 features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = comment_body
