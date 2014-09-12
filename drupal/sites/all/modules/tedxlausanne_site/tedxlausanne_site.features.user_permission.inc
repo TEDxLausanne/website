@@ -338,12 +338,33 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create event content'.
+  $permissions['create event content'] = array(
+    'name' => 'create event content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create speaker content'.
+  $permissions['create speaker content'] = array(
+    'name' => 'create speaker content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create talk content'.
+  $permissions['create talk content'] = array(
+    'name' => 'create talk content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -374,12 +395,33 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any event content'.
+  $permissions['delete any event content'] = array(
+    'name' => 'delete any event content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any speaker content'.
+  $permissions['delete any speaker content'] = array(
+    'name' => 'delete any speaker content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any talk content'.
+  $permissions['delete any talk content'] = array(
+    'name' => 'delete any talk content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -392,12 +434,33 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own event content'.
+  $permissions['delete own event content'] = array(
+    'name' => 'delete own event content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own page content'.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own speaker content'.
+  $permissions['delete own speaker content'] = array(
+    'name' => 'delete own speaker content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own talk content'.
+  $permissions['delete own talk content'] = array(
+    'name' => 'delete own talk content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -419,6 +482,20 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'delete terms in team'.
+  $permissions['delete terms in team'] = array(
+    'name' => 'delete terms in team',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'delete terms in team_function'.
+  $permissions['delete terms in team_function'] = array(
+    'name' => 'delete terms in team_function',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -437,12 +514,33 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any event content'.
+  $permissions['edit any event content'] = array(
+    'name' => 'edit any event content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any speaker content'.
+  $permissions['edit any speaker content'] = array(
+    'name' => 'edit any speaker content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any talk content'.
+  $permissions['edit any talk content'] = array(
+    'name' => 'edit any talk content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -464,6 +562,13 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: 'edit own event content'.
+  $permissions['edit own event content'] = array(
+    'name' => 'edit own event content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
@@ -473,12 +578,40 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own speaker content'.
+  $permissions['edit own speaker content'] = array(
+    'name' => 'edit own speaker content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own talk content'.
+  $permissions['edit own talk content'] = array(
+    'name' => 'edit own talk content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit terms in tags'.
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in team'.
+  $permissions['edit terms in team'] = array(
+    'name' => 'edit terms in team',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in team_function'.
+  $permissions['edit terms in team_function'] = array(
+    'name' => 'edit terms in team_function',
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
