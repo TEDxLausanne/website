@@ -307,7 +307,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -339,6 +339,95 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-talk-field_talk_speaker'
+  $field_instances['node-talk-field_talk_speaker'] = array(
+    'bundle' => 'talk',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_talk_speaker',
+    'label' => 'Talk speaker',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => -2,
+    ),
+  );
+
+  // Exported field_instance: 'node-talk-field_talk_video'
+  $field_instances['node-talk-field_talk_video'] = array(
+    'bundle' => 'talk',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'youtube',
+        'settings' => array(
+          'youtube_autohide' => FALSE,
+          'youtube_autoplay' => FALSE,
+          'youtube_controls' => FALSE,
+          'youtube_height' => NULL,
+          'youtube_iv_load_policy' => FALSE,
+          'youtube_showinfo' => FALSE,
+          'youtube_size' => '420x315',
+          'youtube_width' => NULL,
+        ),
+        'type' => 'youtube_video',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_talk_video',
+    'label' => 'Talk video',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'youtube',
+      'settings' => array(),
+      'type' => 'youtube',
+      'weight' => -3,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
@@ -346,6 +435,8 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Event date');
   t('In one sentence');
   t('Registration Link');
+  t('Talk speaker');
+  t('Talk video');
   t('Teaser');
 
   return $field_instances;
