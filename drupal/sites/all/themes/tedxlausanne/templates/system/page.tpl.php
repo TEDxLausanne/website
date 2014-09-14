@@ -75,10 +75,10 @@
 ?>
 <header id="navbar" role="banner" class="header <?php print $navbar_classes; ?>">
   <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
+    <div class="col-lg-12">
       <div class="navbar-header">
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $base_path . $directory; ?>/img/logo.svg" onerror="this.onerror=null; this.src='<?php print $base_path . $directory; ?>/img/logo.png'" alt="<?php print t('Home'); ?>" />
+          <img src="<?php print $base_path . $directory; ?>/assets/img/logo_tedx.svg" onerror="this.onerror=null; this.src='<?php print $base_path . $directory; ?>/assets/img/logo_tedx.png'" alt="<?php print t('Home'); ?>" />
         </a>
 
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -117,7 +117,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-12">
           <?php print $messages; ?>
           <?php if (!empty($tabs)): ?>
             <?php print render($tabs); ?>
@@ -132,8 +132,8 @@
 
     <section class="container">
 
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="col-md-12">
           <?php if (!empty($page['highlighted'])): ?>
             <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
           <?php endif; ?>
@@ -152,8 +152,8 @@
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
           <?php print render($page['content']); ?>
-          </div>
         </div>
+      </div>
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>
@@ -171,8 +171,50 @@
 </div>
 
 
-<footer class="container footer">
-    <?php if (!empty($page['footer'])): ?>
-      <?php print render($page['footer']); ?>
-    <?php endif; ?>
+<footer class="footer dark-background">
+  <div class="container super-isolate">
+    <div class="row">
+      <div class="col-md-2">
+        <?php if (!empty($page['footer'])): ?>
+        <?php print render($page['footer']); ?>
+        <?php endif; ?>
+        <h4>TEDXLausanne</h4>
+        <p>This independently organized TEDx event is operated under license from TED.</p>
+        <ul class="nav nav-pills">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Credits</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Get Involved</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Become a speaker</a></li>
+          <li><a href="#">Join the team</a></li>
+          <li><a href="#">Become a TEDxLausanne partner</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Newsletter</h4>
+        <p>Get in touch with us and subscribe to our newsletter</p>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+      <div class="col-md-2">
+        <h4>Connect with us</h4>
+        <ul>
+         <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+         <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+         <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+         <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+         <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+         <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
 </footer>
