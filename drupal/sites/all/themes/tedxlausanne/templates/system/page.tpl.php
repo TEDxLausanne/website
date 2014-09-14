@@ -126,6 +126,10 @@
       </div>
     </div>
 
+    <?php if (!empty($page['full_header'])): ?>
+      <?php print render($page['full_header']); ?>
+    <?php endif; ?>
+
     <section class="container">
 
         <div class="row">
@@ -158,10 +162,17 @@
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
+    <?php if (!empty($page['full_footer'])): ?>
+      <?php print render($page['full_footer']); ?>
+    <?php endif; ?>
+
+
   </div>
 </div>
 
 
-<footer class="container">
-
+<footer class="container footer">
+    <?php if (!empty($page['footer'])): ?>
+      <?php print render($page['footer']); ?>
+    <?php endif; ?>
 </footer>
