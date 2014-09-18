@@ -16,5 +16,11 @@ function tedxlausanne_site_user_default_roles() {
     'weight' => 2,
   );
 
+  // Exported role: contributor.
+  $roles['contributor'] = array(
+    'name' => 'contributor',
+    'weight' => 3,
+  );
+
   return $roles;
 }
