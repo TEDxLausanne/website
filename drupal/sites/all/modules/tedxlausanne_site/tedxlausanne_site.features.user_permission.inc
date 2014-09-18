@@ -871,6 +871,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
     ),
     'module' => 'system',
   );
