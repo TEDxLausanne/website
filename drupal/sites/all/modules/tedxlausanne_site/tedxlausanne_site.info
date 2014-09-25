@@ -5,6 +5,7 @@ version = 7.x-1.0-beta1
 project = tedxlausanne_site
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
+dependencies[] = backup_migrate
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
