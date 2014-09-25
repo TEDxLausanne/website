@@ -18,11 +18,14 @@ gulp.task('build-images', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src('../tedxlausanne-styleguide/assets/js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/js'))
+  return gulp.src(['../tedxlausanne-styleguide/build/js/**'])
+          .pipe(concat('main.js'))
+          .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/js'));
+  // gulp.src('../tedxlausanne-styleguide/assets/js/*.js')
+  //   .pipe(jshint())
+  //   .pipe(jshint.reporter('jshint-stylish'))
+  //   .pipe(concat('main.js'))
+  //   .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/js'))
 });
 
 gulp.task('styles', function() {
