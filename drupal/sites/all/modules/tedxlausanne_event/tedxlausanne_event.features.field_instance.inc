@@ -264,49 +264,6 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_talks'
-  $field_instances['node-event-field_event_talks'] = array(
-    'bundle' => 'event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_event_talks',
-    'label' => 'talks',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-event-field_event_teaser'
   $field_instances['node-event-field_event_teaser'] = array(
     'bundle' => 'event',
@@ -544,6 +501,45 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-talk-field_talk_event'
+  $field_instances['node-talk-field_talk_event'] = array(
+    'bundle' => 'talk',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_talk_event',
+    'label' => 'Event',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => -1,
+    ),
+  );
+
   // Exported field_instance: 'node-talk-field_talk_speaker'
   $field_instances['node-talk-field_talk_speaker'] = array(
     'bundle' => 'talk',
@@ -637,6 +633,7 @@ function tedxlausanne_event_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Banner');
   t('Body');
+  t('Event');
   t('Event Location');
   t('Event date');
   t('In one sentence');
@@ -646,7 +643,6 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Talk speaker');
   t('Talk video');
   t('Teaser');
-  t('talks');
 
   return $field_instances;
 }
