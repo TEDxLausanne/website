@@ -43,6 +43,7 @@ features[field_instance][] = node-talk-field_talk_video
 features[node][] = event
 features[node][] = speaker
 features[node][] = talk
+features[views_view][] = homepage_speaker
 features[views_view][] = last_event
 features_exclude[field_base][body] = body
 features_exclude[dependencies][ctools] = ctools
