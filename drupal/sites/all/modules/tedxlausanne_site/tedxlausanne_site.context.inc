@@ -32,6 +32,12 @@ function tedxlausanne_site_context_default_contexts() {
           'region' => 'full_header',
           'weight' => '-10',
         ),
+        'views-homepage_speaker-block' => array(
+          'module' => 'views',
+          'delta' => 'homepage_speaker-block',
+          'region' => 'full_footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
