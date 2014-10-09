@@ -68,7 +68,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -92,7 +92,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'medium',
+          'image_style' => 'banner',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -199,6 +199,49 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_event_highlight'
+  $field_instances['node-event-field_event_highlight'] = array(
+    'bundle' => 'event',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Get displayed on the frontpage',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'no_wrapper',
+    'field_name' => 'field_event_highlight',
+    'label' => 'Highlight',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_event_location'
   $field_instances['node-event-field_event_location'] = array(
     'bundle' => 'event',
@@ -207,7 +250,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -734,6 +777,8 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Event');
   t('Event Location');
   t('Event date');
+  t('Get displayed on the frontpage');
+  t('Highlight');
   t('In one sentence');
   t('Links');
   t('Picture');
