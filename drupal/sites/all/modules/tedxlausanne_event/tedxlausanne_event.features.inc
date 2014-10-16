@@ -32,6 +32,14 @@ function tedxlausanne_event_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'sponsor' => array(
+      'name' => t('Sponsor'),
+      'base' => 'node_content',
+      'description' => t('Sponsors and partners of TEDxLausanne'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'talk' => array(
       'name' => t('Talk'),
       'base' => 'node_content',
