@@ -72,6 +72,8 @@
   <meta name="twitter:title" content="">
   <meta name="twitter:url" content="">
 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
