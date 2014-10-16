@@ -82,8 +82,9 @@
 // We hide the comments and links now so that we can render them later.
 hide($content['comments']);
 hide($content['links']);
+hide($content['title']);
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="well <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 
   <?php print $user_picture; ?>
@@ -101,7 +102,6 @@ hide($content['links']);
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-
     <?php
 
       print render($content);
