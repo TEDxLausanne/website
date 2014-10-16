@@ -324,6 +324,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
     ),
     'module' => 'taxonomy',
   );
@@ -632,7 +633,9 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'delete terms in sponsor_level'.
   $permissions['delete terms in sponsor_level'] = array(
     'name' => 'delete terms in sponsor_level',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -793,7 +796,9 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'edit terms in sponsor_level'.
   $permissions['edit terms in sponsor_level'] = array(
     'name' => 'edit terms in sponsor_level',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+    ),
     'module' => 'taxonomy',
   );
 
