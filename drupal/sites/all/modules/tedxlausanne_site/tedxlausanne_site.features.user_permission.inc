@@ -174,6 +174,15 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'block',
   );
 
+  // Exported permission: 'administer ckeditor'.
+  $permissions['administer ckeditor'] = array(
+    'name' => 'administer ckeditor',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ckeditor',
+  );
+
   // Exported permission: 'administer comments'.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
@@ -449,6 +458,13 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create sponsor content'.
+  $permissions['create sponsor content'] = array(
+    'name' => 'create sponsor content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create talk content'.
   $permissions['create talk content'] = array(
     'name' => 'create talk content',
@@ -466,6 +482,15 @@ function tedxlausanne_site_user_default_permissions() {
       'contributor' => 'contributor',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'customize ckeditor'.
+  $permissions['customize ckeditor'] = array(
+    'name' => 'customize ckeditor',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ckeditor',
   );
 
   // Exported permission: 'customize shortcut links'.
@@ -512,6 +537,13 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'contributor' => 'contributor',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any sponsor content'.
+  $permissions['delete any sponsor content'] = array(
+    'name' => 'delete any sponsor content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -571,6 +603,13 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own sponsor content'.
+  $permissions['delete own sponsor content'] = array(
+    'name' => 'delete own sponsor content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own talk content'.
   $permissions['delete own talk content'] = array(
     'name' => 'delete own talk content',
@@ -588,6 +627,13 @@ function tedxlausanne_site_user_default_permissions() {
       'contributor' => 'contributor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in sponsor_level'.
+  $permissions['delete terms in sponsor_level'] = array(
+    'name' => 'delete terms in sponsor_level',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in tags'.
@@ -665,6 +711,13 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any sponsor content'.
+  $permissions['edit any sponsor content'] = array(
+    'name' => 'edit any sponsor content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any talk content'.
   $permissions['edit any talk content'] = array(
     'name' => 'edit any talk content',
@@ -721,6 +774,13 @@ function tedxlausanne_site_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own sponsor content'.
+  $permissions['edit own sponsor content'] = array(
+    'name' => 'edit own sponsor content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own talk content'.
   $permissions['edit own talk content'] = array(
     'name' => 'edit own talk content',
@@ -728,6 +788,13 @@ function tedxlausanne_site_user_default_permissions() {
       'contributor' => 'contributor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in sponsor_level'.
+  $permissions['edit terms in sponsor_level'] = array(
+    'name' => 'edit terms in sponsor_level',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in tags'.
