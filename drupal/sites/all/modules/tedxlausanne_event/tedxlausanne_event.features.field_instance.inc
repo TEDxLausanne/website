@@ -57,7 +57,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => -3,
     ),
   );
 
@@ -121,7 +121,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => -2,
     ),
   );
 
@@ -195,7 +195,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -238,7 +238,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 8,
+      'weight' => 0,
     ),
   );
 
@@ -286,7 +286,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -347,7 +347,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -390,7 +390,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 4,
     ),
   );
 
@@ -438,7 +438,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'size' => 200,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => -4,
     ),
   );
 
@@ -536,7 +536,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => -2,
+      'weight' => -3,
     ),
   );
 
@@ -590,7 +590,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => -3,
+      'weight' => 1,
     ),
   );
 
@@ -634,7 +634,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 
@@ -671,7 +671,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -1,
+      'weight' => 5,
     ),
   );
 
@@ -709,7 +709,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 0,
+      'weight' => 4,
     ),
   );
 
@@ -764,7 +764,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => -2,
+      'weight' => 3,
     ),
   );
 
@@ -815,7 +815,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => -3,
+      'weight' => 3,
     ),
   );
 
@@ -856,7 +856,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 
@@ -895,7 +895,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => -1,
+      'weight' => 5,
     ),
   );
 
@@ -942,7 +942,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => -2,
+      'weight' => 3,
     ),
   );
 
@@ -988,7 +988,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => -3,
+      'weight' => 3,
     ),
   );
 
