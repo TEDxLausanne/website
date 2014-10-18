@@ -25,6 +25,7 @@ dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = fences
+dependencies[] = field_group
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = filter
