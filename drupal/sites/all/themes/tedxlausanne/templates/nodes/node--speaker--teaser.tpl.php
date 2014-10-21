@@ -83,6 +83,7 @@
 hide($content['comments']);
 hide($content['links']);
 hide($content['title']);
+hide($content['field_speaker_picture']);
 ?>
 
 <!-- <a class="speaker" href="#">
@@ -98,26 +99,21 @@ hide($content['title']);
     </div>
 </a>
  -->
-<a href="<?php print $node_url; ?>" id="node-<?php print $node->nid; ?>" class="speaker <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <div class="shadow-left">
-                <div class="shadow-right">
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 
 
+              <div class="speaker-photo">
+      <?php print render($content['field_speaker_picture']); ?>
+    </div>
 
-
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-
-      print render($content);
-    ?>
-  </div>
+    <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
 
   <?php print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-    <p<?php print $title_attributes; ?>><?php print $title; ?></p>
+    <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
@@ -129,11 +125,18 @@ hide($content['title']);
 
 
 
+  <div class="content"<?php print $content_attributes; ?>>
+    <?php
+      print render($content);
+    ?>
+
+
+  </div>
+
+
+
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
 
-  </div>
-  </div>
-
-</a>
+</div>
