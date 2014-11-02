@@ -830,7 +830,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -884,10 +884,9 @@ function tedxlausanne_event_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => 1,
-          'view_mode' => 'teaser',
+          'link' => 1,
         ),
-        'type' => 'entityreference_entity_view',
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'full' => array(
@@ -916,8 +915,9 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'field_talk_event',
-    'label' => 'Event',
+    'label' => 'Fatured in this event',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -939,13 +939,12 @@ function tedxlausanne_event_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => 1,
-          'view_mode' => 'teaser',
+          'link' => 1,
         ),
-        'type' => 'entityreference_entity_view',
+        'type' => 'entityreference_label',
         'weight' => 2,
       ),
       'full' => array(
@@ -1008,17 +1007,17 @@ function tedxlausanne_event_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'youtube',
         'settings' => array(
-          'youtube_autohide' => FALSE,
-          'youtube_autoplay' => FALSE,
-          'youtube_controls' => FALSE,
-          'youtube_height' => NULL,
-          'youtube_iv_load_policy' => FALSE,
-          'youtube_showinfo' => FALSE,
-          'youtube_size' => '420x315',
-          'youtube_width' => NULL,
+          'youtube_autohide' => 0,
+          'youtube_autoplay' => 0,
+          'youtube_controls' => 0,
+          'youtube_height' => '',
+          'youtube_iv_load_policy' => 0,
+          'youtube_showinfo' => 1,
+          'youtube_size' => 'responsive',
+          'youtube_width' => '',
         ),
         'type' => 'youtube_video',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1083,6 +1082,7 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Event');
   t('Event Location');
   t('Event date');
+  t('Fatured in this event');
   t('Get displayed on the frontpage');
   t('Highlight');
   t('In one sentence');

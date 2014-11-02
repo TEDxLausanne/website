@@ -282,6 +282,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['style_options']['columns'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_talk_event_target_id']['id'] = 'field_talk_event_target_id';
+  $handler->display->display_options['relationships']['field_talk_event_target_id']['table'] = 'field_data_field_talk_event';
+  $handler->display->display_options['relationships']['field_talk_event_target_id']['field'] = 'field_talk_event_target_id';
+  $handler->display->display_options['relationships']['field_talk_event_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -311,6 +316,43 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'talk' => 'talk',
+  );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'field_talk_event_target_id';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Event';
+  $handler->display->display_options['filters']['title']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+  );
+  $handler->display->display_options['filters']['title']['is_grouped'] = TRUE;
+  $handler->display->display_options['filters']['title']['group_info']['label'] = 'Event';
+  $handler->display->display_options['filters']['title']['group_info']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['group_info']['group_items'] = array(
+    1 => array(
+      'title' => 'TEDxLausanne 2014',
+      'operator' => '=',
+      'value' => 'TEDxLausanne 2014',
+    ),
+    2 => array(
+      'title' => 'TEDxLausanne 2015',
+      'operator' => '=',
+      'value' => 'TEDxLausanne 2015',
+    ),
+    3 => array(
+      'title' => '',
+      'operator' => '=',
+      'value' => '',
+    ),
   );
 
   /* Display: Page */
