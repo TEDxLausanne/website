@@ -1,0 +1,349 @@
+diff --git a/plugins/grid/views_bootstrap_grid_plugin_style.inc b/plugins/grid/views_bootstrap_grid_plugin_style.inc
+index 9460652..e4dd9f4 100644
+--- a/plugins/grid/views_bootstrap_grid_plugin_style.inc
++++ b/plugins/grid/views_bootstrap_grid_plugin_style.inc
+@@ -15,6 +15,10 @@ class ViewsBootstrapGridPluginStyle extends views_plugin_style {
+     $options = parent::option_definition();
+     $options['alignment'] = array('default' => 'horizontal');
+     $options['columns'] = array('default' => 2);
++    $options['columns_xs'] = array('default' => 0);
++    $options['columns_sm'] = array('default' => 0);
++    $options['columns_md'] = array('default' => 0);
++    $options['columns_lg'] = array('default' => 0);
+     $options['class_prefix'] = array('default' => 'col-sm');
+     return $options;
+   }
+@@ -37,16 +41,77 @@ class ViewsBootstrapGridPluginStyle extends views_plugin_style {
+       '#default_value' => $this->options['alignment'],
+     );
+
+-    $options = array(1, 2, 3, 4, 6, 12);
++    // Number of columns wrapped in a views row for horizontal alignment.
++    // Number of columns for vertical alignment.
++    $options = array(
++      0 => 'Auto',
++      1 => 1,
++      2 => 2,
++      3 => 3,
++      4 => 4,
++      6 => 6,
++      12 => 12,
++    );
+
+     $form['columns'] = array(
+       '#type' => 'select',
+       '#title' => t('Number of columns'),
+-      '#options' => array_combine($options, $options),
++      '#options' => $options,
+       '#required' => TRUE,
++      '#description' => t('Choose the number of columns that views will wrap in a single row in horizontal alignment or the number of columns in vertical alignment. This will be reflected in the HTML structure rendered regardless of the device size. If in doubt, leave to Auto.'),
+       '#default_value' => $this->options['columns'],
+     );
+
++    // Number of columns per device size. To be used for generating css classes.
++    // Options are the same for all device sizes.
++    $options = array(
++      12 => 1,
++      6 => 2,
++      4 => 3,
++      3 => 4,
++      2 => 6,
++      1 => 12,
++    );
++
++    $form['columns_xs'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for extra small devices'),
++      '#options' => $options,
++      '#required' => TRUE,
++      '#description' => t('Choose the number of columns for a particular device size and up. This affects the css classes that will be applied to the columns and not the actual HTML structure that will be rendered. Not defining the number of columns for a device size will result in inheriting the number of columns from one size below.'),
++      '#default_value' => $this->options['columns_xs'],
++    );
++
++    // Add option to not define the number of columns for the rest
++    $options[0] = 'Do not define';
++
++    $form['columns_sm'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for small devices'),
++      '#options' => $options,
++      '#required' => FALSE,
++      '#description' => t('See the description on the number of columns for extra small devices.'),
++      '#default_value' => $this->options['columns_sm'],
++    );
++
++    $form['columns_md'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for medium devices'),
++      '#options' => $options,
++      '#required' => FALSE,
++      '#description' => t('See the description on the number of columns for extra small devices.'),
++      '#default_value' => $this->options['columns_md'],
++    );
++
++    $form['columns_lg'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for large devices'),
++      '#options' => $options,
++      '#required' => FALSE,
++      '#description' => t('See the description on the number of columns for extra small devices.'),
++      '#default_value' => $this->options['columns_lg'],
++    );
++
+     $form['class_prefix'] = array(
+       '#type' => 'select',
+       '#title' => t('Class prefix'),
+diff --git a/plugins/thumbnail/views_bootstrap_thumbnail_plugin_style.inc b/plugins/thumbnail/views_bootstrap_thumbnail_plugin_style.inc
+index e615440..c10830b 100644
+--- a/plugins/thumbnail/views_bootstrap_thumbnail_plugin_style.inc
++++ b/plugins/thumbnail/views_bootstrap_thumbnail_plugin_style.inc
+@@ -14,7 +14,11 @@ class ViewsBootstrapThumbnailPluginStyle extends views_plugin_style {
+   public function option_definition() {
+     $options = parent::option_definition();
+     $options['alignment'] = array('default' => 'horizontal');
+-    $options['columns'] = array('default' => 4);
++    $options['columns'] = array('default' => 0);
++    $options['columns_xs'] = array('default' => 12);
++    $options['columns_sm'] = array('default' => 6);
++    $options['columns_md'] = array('default' => 4);
++    $options['columns_lg'] = array('default' => 3);
+     $options['class_prefix'] = array('default' => 'col-sm');
+     return $options;
+   }
+@@ -37,16 +41,77 @@ class ViewsBootstrapThumbnailPluginStyle extends views_plugin_style {
+       '#default_value' => $this->options['alignment'],
+     );
+
+-    $options = array(1, 2, 3, 4, 6, 12);
++    // Number of columns wrapped in a views row for horizontal alignment.
++    // Number of columns for vertical alignment.
++    $options = array(
++      0 => 'Auto',
++      1 => 1,
++      2 => 2,
++      3 => 3,
++      4 => 4,
++      6 => 6,
++      12 => 12,
++    );
+
+     $form['columns'] = array(
+       '#type' => 'select',
+       '#title' => t('Number of columns'),
+-      '#options' => array_combine($options, $options),
++      '#options' => $options,
+       '#required' => TRUE,
++      '#description' => t('Choose the number of columns that views will wrap in a single row in horizontal alignment or the number of columns in vertical alignment. This will be reflected in the HTML structure rendered regardless of the device size. If in doubt, leave to Auto.'),
+       '#default_value' => $this->options['columns'],
+     );
+
++    // Number of columns per device size. To be used for generating css classes.
++    // Options are the same for all device sizes.
++    $options = array(
++      12 => 1,
++      6 => 2,
++      4 => 3,
++      3 => 4,
++      2 => 6,
++      1 => 12,
++    );
++
++    $form['columns_xs'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for extra small devices'),
++      '#options' => $options,
++      '#required' => TRUE,
++      '#description' => t('Choose the number of columns for a particular device size and up. This affects the css classes that will be applied to the columns and not the actual HTML structure that will be rendered. Not defining the number of columns for a device size will result in inheriting the number of columns from one size below.'),
++      '#default_value' => $this->options['columns_xs'],
++    );
++
++    // Add option to not define the number of columns for the rest
++    $options[0] = 'Do not define';
++
++    $form['columns_sm'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for small devices'),
++      '#options' => $options,
++      '#required' => FALSE,
++      '#description' => t('See the description on the number of columns for extra small devices.'),
++      '#default_value' => $this->options['columns_sm'],
++    );
++
++    $form['columns_md'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for medium devices'),
++      '#options' => $options,
++      '#required' => FALSE,
++      '#description' => t('See the description on the number of columns for extra small devices.'),
++      '#default_value' => $this->options['columns_md'],
++    );
++
++    $form['columns_lg'] = array(
++      '#type' => 'select',
++      '#title' => t('Number of columns for large devices'),
++      '#options' => $options,
++      '#required' => FALSE,
++      '#description' => t('See the description on the number of columns for extra small devices.'),
++      '#default_value' => $this->options['columns_lg'],
++    );
++
+     $form['class_prefix'] = array(
+       '#type' => 'select',
+       '#title' => t('Class prefix'),
+diff --git a/templates/grid/theme.inc b/templates/grid/theme.inc
+index a8379c8..c5b6ec9 100644
+--- a/templates/grid/theme.inc
++++ b/templates/grid/theme.inc
+@@ -8,10 +8,57 @@ function template_preprocess_views_bootstrap_grid_plugin_style(&$vars) {
+   $options  = $view->style_plugin->options;
+   $horizontal = ($options['alignment'] === 'horizontal');
+
+-  $columns = $options['columns'];
++  // If columns are set to 0 (Auto), apply the maximum from the number of columns
++  // defined per device size.
++  if (!$options['columns']) {
++    $options['columns'] = 1;
++    foreach (array('xs', 'sm', 'md', 'lg') as $size) {
++      if (isset($vars['view']->style_options["columns_$size"]) && $vars['view']->style_options["columns_$size"] > 0) {
++        $tmpColumns = 12 / $vars['view']->style_options["columns_$size"];
++        if ($tmpColumns > $options['columns']) {
++          $options['columns'] = $tmpColumns;
++        }
++      }
++    }
++  }
+
+   // Split items by rows and columns.
+-  $vars['items'] = _views_bootstrap_split_rows($vars, $columns, $horizontal);
+-  $vars['column_type'] = 12 / $columns;
++  $vars['items'] = _views_bootstrap_split_rows($vars, $options['columns'], $horizontal);
++
++  // Prepare column css classes. Add the class for each device size if set and if
++  // different than 0 ("Do not define" option).
++  $vars['col_classes'] = 'col';
++  foreach (array('xs', 'sm', 'md', 'lg') as $size) {
++    $vars['col_classes'] .= isset($vars['view']->style_options["columns_$size"]) && $vars['view']->style_options["columns_$size"]
++      ? ' col-'.$size.'-'.$vars['view']->style_options["columns_$size"]
++      : '';
++  }
+   $vars['class_prefix'] = $options['class_prefix'] ?: 'col-sm';
+ }
++
++/**
++ * Implementation of template preprocess for the view fields.
++ */
++function template_preprocess_views_bootstrap_grid_plugin_rows(&$vars) {
++  $view = &$vars['view'];
++
++  foreach ($vars['options'] as $id => $field) {
++    switch ($id) {
++      case 'image':
++      case 'title':
++        if (isset($view->field[$field])) {
++          $vars[$id] = $view->field[$field]->advanced_render($vars['row']);
++        }
++        break;
++
++      case 'content':
++        $vars[$id] = array();
++        foreach (array_filter($field) as $content_field) {
++          if (isset($view->field[$content_field])) {
++            $vars[$id][$content_field] = $view->field[$content_field]->advanced_render($vars['row']);
++          }
++        }
++        break;
++    }
++  }
++}
+diff --git a/templates/grid/views-bootstrap-grid-plugin-style.tpl.php b/templates/grid/views-bootstrap-grid-plugin-style.tpl.php
+index d6bea6c..594cd64 100644
+--- a/templates/grid/views-bootstrap-grid-plugin-style.tpl.php
++++ b/templates/grid/views-bootstrap-grid-plugin-style.tpl.php
+@@ -24,8 +24,10 @@
+     <?php foreach ($items as $row): ?>
+       <div class="row">
+         <?php foreach ($row['content'] as $column): ?>
+-          <div class="col <?php print $class_prefix ?>-<?php print $column_type ?>">
+-            <?php print $column['content'] ?>
++          <div class="<?php print $col_classes ?>">
++            <div class="grid">
++              <?php print $column['content'] ?>
++            </div>
+           </div>
+         <?php endforeach ?>
+       </div>
+@@ -35,9 +37,11 @@
+
+     <div class="row">
+       <?php foreach ($items as $column): ?>
+-        <div class="col <?php print $class_prefix ?>-<?php print $column_type ?>">
++        <div class="<?php print $col_classes ?>">
+           <?php foreach ($column['content'] as $row): ?>
+-            <?php print $row['content'] ?>
++            <div class="grid">
++              <?php print $row['content'] ?>
++            </div>
+           <?php endforeach ?>
+         </div>
+       <?php endforeach ?>
+diff --git a/templates/thumbnail/theme.inc b/templates/thumbnail/theme.inc
+index fda28a5..6a42786 100644
+--- a/templates/thumbnail/theme.inc
++++ b/templates/thumbnail/theme.inc
+@@ -8,11 +8,31 @@ function template_preprocess_views_bootstrap_thumbnail_plugin_style(&$vars) {
+   $options  = $view->style_plugin->options;
+   $horizontal = ($options['alignment'] === 'horizontal');
+
+-  $columns = $options['columns'];
++  // If columns are set to 0 (Auto), apply the maximum from the number of columns
++  // defined per device size.
++  if (!$options['columns']) {
++    $options['columns'] = 1;
++    foreach (array('xs', 'sm', 'md', 'lg') as $size) {
++      if (isset($vars['view']->style_options["columns_$size"]) && $vars['view']->style_options["columns_$size"] > 0) {
++        $tmpColumns = 12 / $vars['view']->style_options["columns_$size"];
++        if ($tmpColumns > $options['columns']) {
++          $options['columns'] = $tmpColumns;
++        }
++      }
++    }
++  }
+
+   // Split items by rows and columns.
+-  $vars['items'] = _views_bootstrap_split_rows($vars, $columns, $horizontal);
+-  $vars['column_type'] = 12 / $columns;
++  $vars['items'] = _views_bootstrap_split_rows($vars, $options['columns'], $horizontal);
++
++  // Prepare column css classes. Add the class for each device size if set and if
++  // different than 0 ("Do not define" option).
++  $vars['col_classes'] = 'col';
++  foreach (array('xs', 'sm', 'md', 'lg') as $size) {
++    $vars['col_classes'] .= isset($vars['view']->style_options["columns_$size"]) && $vars['view']->style_options["columns_$size"]
++      ? ' col-'.$size.'-'.$vars['view']->style_options["columns_$size"]
++      : '';
++  }
+   $vars['class_prefix'] = $options['class_prefix'] ?: 'col-sm';
+ }
+
+diff --git a/templates/thumbnail/views-bootstrap-thumbnail-plugin-style.tpl.php b/templates/thumbnail/views-bootstrap-thumbnail-plugin-style.tpl.php
+index 656ea81..dc1f1b6 100644
+--- a/templates/thumbnail/views-bootstrap-thumbnail-plugin-style.tpl.php
++++ b/templates/thumbnail/views-bootstrap-thumbnail-plugin-style.tpl.php
+@@ -22,7 +22,7 @@
+     <?php foreach ($items as $row): ?>
+       <div class="row">
+         <?php foreach ($row['content'] as $column): ?>
+-          <div class="col <?php print $class_prefix ?>-<?php print $column_type ?>">
++          <div class="<?php print $col_classes ?>">
+             <div class="thumbnail">
+               <?php print $column['content'] ?>
+             </div>
+@@ -35,7 +35,7 @@
+
+     <div class="row">
+       <?php foreach ($items as $column): ?>
+-        <div class="col <?php print $class_prefix ?>-<?php print $column_type ?>">
++        <div class="<?php print $col_classes ?>">
+           <?php foreach ($column['content'] as $row): ?>
+             <div class="thumbnail">
+               <?php print $row['content'] ?>

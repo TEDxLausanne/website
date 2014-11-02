@@ -1,0 +1,73 @@
+diff --git a/plugins/grid/views_bootstrap_grid_plugin_style.inc b/plugins/grid/views_bootstrap_grid_plugin_style.inc
+index c06d6f4..08ae555 100644
+--- a/plugins/grid/views_bootstrap_grid_plugin_style.inc
++++ b/plugins/grid/views_bootstrap_grid_plugin_style.inc
+@@ -13,10 +13,13 @@ class ViewsBootstrapGridPluginStyle extends views_plugin_style {
+    */
+   public function option_definition() {
+     $options = parent::option_definition();
+-    $options['columns'] = array('default' => 2);
++    $options['columns'] = array('default' => 3);
++    $options['col_lg'] = array('default' => 3);
++    $options['col_md'] = array('default' => 4);
++    $options['col_sm'] = array('default' => 6);
++    $options['col_xs'] = array('default' => 12);
+     return $options;
+   }
+-
+   /**
+    * Form.
+    */
+@@ -26,6 +29,39 @@ class ViewsBootstrapGridPluginStyle extends views_plugin_style {
+       '#type' => 'select',
+       '#title' => t('Number of columns'),
+       '#default_value' => $this->options['columns'],
++      '#description' => t('Number of columns rendered per row.'),
++      '#options' => array_combine($options, $options),
++      '#required' => TRUE,
++    );
++    $form['col_lg'] = array(
++      '#type' => 'select',
++      '#title' => t('Large devices'),
++      '#default_value' => $this->options['col_lg'],
++      '#description' => t('col-lg-*'),
++      '#options' => array_combine($options, $options),
++      '#required' => TRUE,
++    );
++    $form['col_md'] = array(
++      '#type' => 'select',
++      '#title' => t('Medium devices'),
++      '#default_value' => $this->options['col_md'],
++      '#description' => t('col-md-*'),
++      '#options' => array_combine($options, $options),
++      '#required' => TRUE,
++    );
++    $form['col_sm'] = array(
++      '#type' => 'select',
++      '#title' => t('Small devices'),
++      '#default_value' => $this->options['col_sm'],
++      '#description' => t('col-sm-*'),
++      '#options' => array_combine($options, $options),
++      '#required' => TRUE,
++    );
++    $form['col_xs'] = array(
++      '#type' => 'select',
++      '#title' => t('Extra small devices'),
++      '#default_value' => $this->options['col_xs'],
++      '#description' => t('col-xs-*'),
+       '#options' => array_combine($options, $options),
+       '#required' => TRUE,
+     );
+diff --git a/templates/grid/views-bootstrap-grid-plugin-style.tpl.php b/templates/grid/views-bootstrap-grid-plugin-style.tpl.php
+index 2d4f57d..c19e8ab 100644
+--- a/templates/grid/views-bootstrap-grid-plugin-style.tpl.php
++++ b/templates/grid/views-bootstrap-grid-plugin-style.tpl.php
+@@ -17,7 +17,7 @@
+   <?php foreach ($columns as $column): ?>
+     <div class="row">
+       <?php foreach ($column as $key => $row): ?>
+-        <div class="col col-lg-<?php print $column_type ?>">
++        <div class="col col-lg-<?php print $options['col_lg'] ?> col-md-<?php print $options['col_md'] ?> col-sm-<?php print $options['col_sm'] ?> col-xs-<?php print $options['col_xs'] ?>">
+           <?php print $row ?>
+         </div>
+       <?php endforeach ?>
