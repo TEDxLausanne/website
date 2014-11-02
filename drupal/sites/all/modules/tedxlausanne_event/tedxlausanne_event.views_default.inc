@@ -213,11 +213,8 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '48';
-  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
-  $handler->display->display_options['style_options']['row']['element_type'] = 'row';
-  $handler->display->display_options['style_options']['row']['first_class'] = 'col-sm-3';
-  $handler->display->display_options['style_options']['row']['last_class'] = 'col-sm-3';
-  $handler->display->display_options['style_options']['row']['last_every_nth'] = '1';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
+  $handler->display->display_options['style_options']['columns'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Field: Content: Title */
