@@ -26,18 +26,7 @@ function tedxlausanne_site_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
@@ -61,12 +50,6 @@ function tedxlausanne_site_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'context_ui-editor' => array(
-          'module' => 'context_ui',
-          'delta' => 'editor',
-          'region' => 'full_header',
-          'weight' => '-10',
-        ),
         'views-last_event-block' => array(
           'module' => 'views',
           'delta' => 'last_event-block',
