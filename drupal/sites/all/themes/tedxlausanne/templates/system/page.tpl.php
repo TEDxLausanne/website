@@ -130,7 +130,7 @@
       <?php print render($page['full_header']); ?>
     <?php endif; ?>
 
-    <section class="container">
+    <section class="container super-isolate">
 
       <div class="row">
         <div class="col-md-12">
@@ -151,16 +151,27 @@
           <?php if (!empty($action_links)): ?>
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
-          <?php print render($page['content']); ?>
+
+
+
+        <?php if (!empty($page['sidebar_second'])): ?>
+          <div class="row">
+            <div class="col-md-8">
+              <?php print render($page['content']); ?>
+            </div>
+            <aside class="col-md-3 col-md-offset-1" role="complementary">
+              <?php print render($page['sidebar_second']); ?>
+            </aside>  <!-- /#sidebar-second -->
+          </div>
+        <?php else: ?>
+            <?php print render($page['content']); ?>
+        <?php endif; ?>
         </div>
       </div>
+
     </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
+
 
     <?php if (!empty($page['full_footer'])): ?>
       <div class="well">
