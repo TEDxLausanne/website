@@ -82,37 +82,38 @@
 // We hide the comments and links now so that we can render them later.
 hide($content['comments']);
 hide($content['links']);
-hide($content['title']);
+hide($content['field_title']);
+hide($content['field_event_banner']);
+hide($content['field_event_title']);
+hide($content['field_event_teaser']);
+$file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
-<div id="node-<?php print $node->nid; ?>" class="well <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<a href="<?php print $node_url; ?>"  id="node-<?php print $node->nid; ?>" class="clearfix text-center isolate banner banner-dark banner-main <?php print $classes; ?>" <?php print $attributes; ?> style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>'); display:block;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <?php print $user_picture; ?>
 
+        <?php print render($title_prefix); ?>
+        <?php if (!$page): ?>
+          <h5<?php print $title_attributes; ?>><?php print $title; ?></h5>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
 
-  <?php print $user_picture; ?>
+        <?php if ($display_submitted): ?>
+          <div class="submitted">
+            <?php print $submitted; ?>
+          </div>
+        <?php endif; ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
+        <div class="content"<?php print $content_attributes; ?>>
+          <?php print render($content['field_event_title']); ?>
+          <h3><?php print render($content['field_event_teaser']); ?></h3>
+          <?php
+            print render($content);
+          ?>
+        </div>
+      </div>
     </div>
-  <?php endif; ?>
-
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-
-      print render($content);
-    ?>
   </div>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
-  <?php print render($content['field_image_principal']); ?>
-
-
-</div>
+</a>

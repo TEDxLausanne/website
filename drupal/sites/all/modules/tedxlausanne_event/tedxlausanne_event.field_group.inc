@@ -26,7 +26,8 @@ function tedxlausanne_event_field_group_info() {
       0 => 'body',
       1 => 'field_event_teaser',
       2 => 'field_event_banner',
-      3 => 'title',
+      3 => 'field_event_title',
+      4 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
