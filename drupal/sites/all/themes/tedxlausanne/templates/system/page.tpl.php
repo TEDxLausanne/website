@@ -163,7 +163,11 @@
     <?php endif; ?>
 
     <?php if (!empty($page['full_footer'])): ?>
-      <?php print render($page['full_footer']); ?>
+      <div class="well">
+        <div class="container">
+          <?php print render($page['full_footer']); ?>
+        </div>
+      </div>
     <?php endif; ?>
 
 
