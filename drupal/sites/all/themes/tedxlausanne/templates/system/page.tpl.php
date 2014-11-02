@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" role="banner" class="header <?php print $navbar_classes; ?>">
+<header id="navbar" role="banner" class="header <?php print $navbar_classes; ?> isolate">
   <div class="row">
     <div class="col-lg-12">
       <div class="navbar-header">
