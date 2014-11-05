@@ -31,7 +31,7 @@ after "deploy:update", "deploy:cleanup"
 #logger.level = Logger::MAX_LEVEL
 
 set :theme_path, Pathname.new('drupal/sites/all/themes/tedxlausanne')
-set :local_app_path, Pathname.new('/Users/mfh/as-dev/tedxlausanne-website')
+set :local_app_path, Pathname.new('/Users/mfh/dev/tedxlausanne-website')
 set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
 
 namespace :deploy do
