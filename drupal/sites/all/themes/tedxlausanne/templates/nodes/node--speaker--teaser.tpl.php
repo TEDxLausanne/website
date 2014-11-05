@@ -107,7 +107,7 @@ hide($content['field_speaker_picture']);
       <?php print render($content['field_speaker_picture']); ?>
     </div>
 
-    <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+    <div class="btn btn-default btn-block btn-speaker">Watch</div>
 
   <?php print $user_picture; ?>
 
