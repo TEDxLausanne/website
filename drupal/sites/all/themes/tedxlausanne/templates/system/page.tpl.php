@@ -196,25 +196,23 @@
         <h4>TEDXLausanne</h4>
         <p>This independently organized TEDx event is operated under license from TED.</p>
         <ul class="nav nav-pills">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Credits</a></li>
+          <li><a href="/about-tedxlausanne">About</a></li>
+          <!-- <li><a href="#">Credits</a></li> -->
         </ul>
       </div>
       <div class="col-md-3">
         <h4>Get Involved</h4>
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Become a speaker</a></li>
-          <li><a href="#">Join the team</a></li>
-          <li><a href="#">Become a TEDxLausanne partner</a></li>
-        </ul>
+        <?php if (!empty($page['footer_menu'])): ?>
+          <?php print render($page['footer_menu']); ?>
+        <?php endif; ?>
       </div>
       <div class="col-md-4">
         <h4>Newsletter</h4>
         <p>Get in touch with us and subscribe to our newsletter</p>
-        <form class="form-inline" role="form">
+        <form class="form-inline" role="form" action="http://newsletter.tedxlausanne.org/t/d/s/jkldkj/" method="post">
           <div class="form-group">
             <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            <input id="fieldEmail" name="cm-jkldkj-jkldkj" type="email" class="form-control" placeholder="Enter email" required />
           </div>
           <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
@@ -222,12 +220,12 @@
       <div class="col-md-2">
         <h4>Connect with us</h4>
         <ul>
-         <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-         <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-         <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-         <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
-         <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
+         <li><a href="http://twitter.com/TEDxLausanne"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+         <li><a href="http://www.facebook.com/TEDxLausanne"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+         <li><a href="http://www.linkedin.com/company/tedxlausanne"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+         <li><a href="http://instagram.com/tedxlausanne"><i class="fa fa-instagram"></i> Instagram</a></li>
+         <li><a href="https://www.youtube.com/channel/UC97FXhbvEbpb9Bb2YvUDwqw"><i class="fa fa-youtube"></i> Youtube</a></li>
+         <li><a href="http://www.flickr.com/photos/tedxlausanne/"><i class="fa fa-flickr"></i> flickr</a></li>
        </ul>
      </div>
    </div>

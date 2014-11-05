@@ -20,6 +20,7 @@ regions[page_bottom]    = 'Page bottom'
 regions[full_header]    = 'Top Content full'
 regions[full_footer]    = 'Above Content full'
 regions[footer]         = 'Footer'
+regions[footer_menu]    = 'Footer menu'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
