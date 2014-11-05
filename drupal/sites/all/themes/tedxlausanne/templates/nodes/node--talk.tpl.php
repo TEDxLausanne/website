@@ -82,6 +82,7 @@
 // We hide the comments and links now so that we can render them later.
 hide($content['comments']);
 hide($content['field_talk_event']);
+hide($content['field_talk_speaker']);
 ?>
 
 <!-- <a class="speaker" href="#">
@@ -98,43 +99,35 @@ hide($content['field_talk_event']);
 </a>
  -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <div class="row">
+    <div class="col-md-8">
+      <?php print $user_picture; ?>
 
-    <div class="row">
-      <div class="col-md-8">
-        <?php print $user_picture; ?>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page): ?>
+        <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
 
-        <?php print render($title_prefix); ?>
-        <?php if (!$page): ?>
-          <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-
-        <?php if ($display_submitted): ?>
-          <div class="submitted">
-            <?php print $submitted; ?>
-          </div>
-        <?php endif; ?>
-
-
-
-        <div class="content"<?php print $content_attributes; ?>>
-          <?php
-          print render($content);
-          ?>
-
-
+      <?php if ($display_submitted): ?>
+        <div class="submitted">
+          <?php print $submitted; ?>
+        </div>
+      <?php endif; ?>
+      <div class="content"<?php print $content_attributes; ?>>
+        <?php
+        print render($content);
+        ?>
       </div>
-
-      </div>
-      <aside class="col-md-3 col-md-offset-1" role="complementary">
-                <?php print render($content['field_talk_event']); ?>
-            </aside>  <!-- /#sidebar-second -->
-
     </div>
-
-
+    <aside class="col-md-3 col-md-offset-1" role="complementary">
+      <?php print render($content['field_talk_event']); ?>
+    </aside>  <!-- /#sidebar-second -->
   </div>
-
-
-
+  <div class="row">
+    <div class="col-md-8">
+      <hr>
+      <?php print render($content['field_talk_speaker']); ?>
+    </div>
+  </div>
 </div>

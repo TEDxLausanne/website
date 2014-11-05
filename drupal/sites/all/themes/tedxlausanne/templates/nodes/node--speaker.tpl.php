@@ -99,20 +99,18 @@ hide($content['field_speaker_picture']);
  -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-    <div class="row">
-      <div class="col-md-4 col-sm-3">
-        <div class="speaker-photo">
-          <?php print render($content['field_speaker_picture']); ?>
-        </div>
+    <div class="row media">
+      <div class="col-md-4 col-sm-3 media-left">
+        <?php print render($content['field_speaker_picture']); ?>
       </div>
-      <div class="col-md-8 col-sm-9">
+      <div class="col-md-8 col-sm-9 media-body">
 
 
         <?php print $user_picture; ?>
 
         <?php print render($title_prefix); ?>
         <?php if (!$page): ?>
-          <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
+          <h2<?php print $title_attributes; ?>  class="media-heading"><?php print $title; ?></h2>
         <?php endif; ?>
         <?php print render($title_suffix); ?>
 
@@ -128,8 +126,6 @@ hide($content['field_speaker_picture']);
           <?php
           print render($content);
           ?>
-
-
       </div>
     </div>
 
