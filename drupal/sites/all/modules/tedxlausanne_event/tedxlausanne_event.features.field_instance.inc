@@ -956,7 +956,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_talk_event',
-    'label' => 'Fatured in this event',
+    'label' => 'Featured in this event',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1122,7 +1122,7 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Event Location');
   t('Event Title');
   t('Event date');
-  t('Fatured in this event');
+  t('Featured in this event');
   t('Get displayed on the frontpage');
   t('Highlight');
   t('In one sentence');
