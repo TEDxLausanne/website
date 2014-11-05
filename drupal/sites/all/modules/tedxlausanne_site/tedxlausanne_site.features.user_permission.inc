@@ -16,6 +16,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'admin_menu',
   );
@@ -26,6 +27,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'system',
   );
@@ -76,6 +78,7 @@ function tedxlausanne_site_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -86,6 +89,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -105,6 +109,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'dashboard',
   );
@@ -115,6 +120,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'overlay',
   );
@@ -143,6 +149,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'user',
   );
@@ -252,6 +259,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'menu',
   );
@@ -281,6 +289,15 @@ function tedxlausanne_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'administer pathauto'.
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   // Exported permission: 'administer permissions'.
@@ -334,6 +351,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -353,6 +371,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'path',
   );
@@ -362,6 +381,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'user',
   );
@@ -417,6 +437,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'user',
   );
@@ -436,6 +457,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -445,6 +467,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'create event content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -455,6 +478,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -464,6 +488,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'create speaker content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -471,7 +496,10 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'create sponsor content'.
   $permissions['create sponsor content'] = array(
     'name' => 'create sponsor content',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+      'super user' => 'super user',
+    ),
     'module' => 'node',
   );
 
@@ -480,6 +508,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'create talk content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -490,6 +519,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'path',
   );
@@ -518,6 +548,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -527,6 +558,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete any event content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -537,6 +569,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -546,6 +579,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete any speaker content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -553,7 +587,10 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'delete any sponsor content'.
   $permissions['delete any sponsor content'] = array(
     'name' => 'delete any sponsor content',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+      'super user' => 'super user',
+    ),
     'module' => 'node',
   );
 
@@ -562,6 +599,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete any talk content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -581,6 +619,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -590,6 +629,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete own event content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -600,6 +640,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -609,6 +650,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete own speaker content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -616,7 +658,10 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'delete own sponsor content'.
   $permissions['delete own sponsor content'] = array(
     'name' => 'delete own sponsor content',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+      'super user' => 'super user',
+    ),
     'module' => 'node',
   );
 
@@ -625,6 +670,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete own talk content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -635,6 +681,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -644,6 +691,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete terms in sponsor_level',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -654,6 +702,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -663,6 +712,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete terms in team',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -672,6 +722,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'delete terms in team_function',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -691,6 +742,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -700,6 +752,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit any event content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -710,6 +763,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -719,6 +773,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit any speaker content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -726,7 +781,10 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'edit any sponsor content'.
   $permissions['edit any sponsor content'] = array(
     'name' => 'edit any sponsor content',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+      'super user' => 'super user',
+    ),
     'module' => 'node',
   );
 
@@ -735,6 +793,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit any talk content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -745,6 +804,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -763,6 +823,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit own event content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -773,6 +834,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -782,6 +844,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit own speaker content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -789,7 +852,10 @@ function tedxlausanne_site_user_default_permissions() {
   // Exported permission: 'edit own sponsor content'.
   $permissions['edit own sponsor content'] = array(
     'name' => 'edit own sponsor content',
-    'roles' => array(),
+    'roles' => array(
+      'contributor' => 'contributor',
+      'super user' => 'super user',
+    ),
     'module' => 'node',
   );
 
@@ -798,6 +864,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit own talk content',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -807,6 +874,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit terms in sponsor_level',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -817,6 +885,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -826,6 +895,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit terms in team',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -835,6 +905,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'edit terms in team_function',
     'roles' => array(
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'taxonomy',
   );
@@ -864,6 +935,15 @@ function tedxlausanne_site_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'notify of path changes'.
+  $permissions['notify of path changes'] = array(
+    'name' => 'notify of path changes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   // Exported permission: 'perform backup'.
@@ -909,6 +989,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -918,6 +999,7 @@ function tedxlausanne_site_user_default_permissions() {
     'name' => 'search content',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'search',
   );
@@ -967,6 +1049,7 @@ function tedxlausanne_site_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'filter',
   );
@@ -977,6 +1060,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'filter',
   );
@@ -987,6 +1071,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );
@@ -997,6 +1082,7 @@ function tedxlausanne_site_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'node',
   );

@@ -22,5 +22,11 @@ function tedxlausanne_site_user_default_roles() {
     'weight' => 3,
   );
 
+  // Exported role: super user.
+  $roles['super user'] = array(
+    'name' => 'super user',
+    'weight' => 4,
+  );
+
   return $roles;
 }
