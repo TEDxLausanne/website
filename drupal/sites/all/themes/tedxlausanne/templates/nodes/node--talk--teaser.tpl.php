@@ -85,55 +85,27 @@ hide($content['links']);
 hide($content['title']);
 ?>
 
-<!-- <a class="speaker" href="#">
-    <div class="shadow-left">
-        <div class="shadow-right">
-            <div class="speaker-photo">
-                <img src="img/speaker.jpg" width="100%"/>
-            </div>
-            <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
-            <h4>Speaker name</h4>
-            <p>Something special about this guy ?</p>
-        </div>
-    </div>
-</a>
- -->
-<a href="<?php print $node_url; ?>" id="node-<?php print $node->nid; ?>" class="speaker <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<a href="<?php print $node_url; ?>" id="node-<?php print $node->nid; ?>" class="mediacard <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="shadow-left">
-                <div class="shadow-right">
-
-
-
-
-
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-
-      print render($content);
-    ?>
-  </div>
-
-  <?php print $user_picture; ?>
-
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <p<?php print $title_attributes; ?>><?php print $title; ?></p>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
+    <div class="shadow-right">
+      <div class="content"<?php print $content_attributes; ?>>
+        <?php
+          print render($content);
+        ?>
+      </div>
+      <?php print $user_picture; ?>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page): ?>
+        <p<?php print $title_attributes; ?>><?php print $title; ?></p>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php if ($display_submitted): ?>
+        <div class="submitted">
+          <?php print $submitted; ?>
+        </div>
+      <?php endif; ?>
+      <?php print render($content['links']); ?>
+      <?php print render($content['comments']); ?>
     </div>
-  <?php endif; ?>
-
-
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
   </div>
-  </div>
-
 </a>

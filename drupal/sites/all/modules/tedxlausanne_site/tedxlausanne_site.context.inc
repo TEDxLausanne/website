@@ -25,9 +25,26 @@ function tedxlausanne_site_context_default_contexts() {
         'node_form' => '1',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        '~<front>' => '~<front>',
+        '~event/*' => '~event/*',
+      ),
+    ),
   );
-  $context->reactions = array();
-  $context->condition_mode = 0;
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-last_event-block' => array(
+          'module' => 'views',
+          'delta' => 'last_event-block',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

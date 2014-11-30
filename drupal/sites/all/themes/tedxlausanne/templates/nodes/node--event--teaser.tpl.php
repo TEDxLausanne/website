@@ -85,35 +85,40 @@ hide($content['links']);
 hide($content['field_title']);
 hide($content['field_event_banner']);
 hide($content['field_event_title']);
-hide($content['field_event_teaser']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
-<a href="<?php print $node_url; ?>"  id="node-<?php print $node->nid; ?>" class="clearfix text-center isolate banner banner-dark banner-main <?php print $classes; ?>" <?php print $attributes; ?> style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>'); display:block;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <?php print $user_picture; ?>
+<div href="<?php print $node_url; ?>"  id="node-<?php print $node->nid; ?>" class="clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
 
-        <?php print render($title_prefix); ?>
-        <?php if (!$page): ?>
-          <h5<?php print $title_attributes; ?>><?php print $title; ?></h5>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
+ <a href="<?php print $node_url; ?>"  class="mediacard">
 
-        <?php if ($display_submitted): ?>
-          <div class="submitted">
-            <?php print $submitted; ?>
-          </div>
-        <?php endif; ?>
 
-        <div class="content"<?php print $content_attributes; ?>>
-          <?php print render($content['field_event_title']); ?>
-          <h3><?php print render($content['field_event_teaser']); ?></h3>
-          <?php
-            print render($content);
-          ?>
+   <div class="shadow-left">
+    <div class="shadow-right">
+      <div class="mediacard-photo">
+        <?php print render($content['field_event_banner']); ?>
+      </div>
+      <div class="btn btn-default btn-block btn-mediacard"><?php print render($content['field_event_title']); ?></div>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page): ?>
+        <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+
+      <?php if ($display_submitted): ?>
+        <div class="submitted">
+          <?php print $submitted; ?>
         </div>
+      <?php endif; ?>
+
+      <div class="content"<?php print $content_attributes; ?>>
+        <p>
+        <?php
+        print render($content);
+        ?>
+        </p>
+
       </div>
     </div>
   </div>
 </a>
+</div>

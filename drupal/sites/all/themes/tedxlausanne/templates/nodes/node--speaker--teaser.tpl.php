@@ -100,43 +100,25 @@ hide($content['field_speaker_picture']);
 </a>
  -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-
-
-              <div class="speaker-photo">
-      <?php print render($content['field_speaker_picture']); ?>
-    </div>
-
-    <div class="btn btn-default btn-block btn-speaker">Watch</div>
-
+  <div class="mediacard-photo">
+    <?php print render($content['field_speaker_picture']); ?>
+  </div>
+  <div class="btn btn-default btn-block btn-mediacard">Watch</div>
   <?php print $user_picture; ?>
-
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
     <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
   <?php if ($display_submitted): ?>
     <div class="submitted">
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
-
-
-
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       print render($content);
     ?>
-
-
   </div>
-
-
-
   <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
 </div>
