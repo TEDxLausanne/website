@@ -24,6 +24,10 @@ function tedxlausanne_preprocess_node(&$variables) {
   if($variables['view_mode'] == 'teaser') {
     $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__teaser';
   }
+
+  if($variables['view_mode'] == 'full_teaser') {
+    $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__full_teaser';
+  }
   // if (module_exists('devel')) {
   //   dpm($variables);
   // }

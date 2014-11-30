@@ -5,3 +5,13 @@
  */
 
 include_once 'tedxlausanne_site.features.inc';
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function tedxlausanne_site_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['full_teaser'] = array(
+    'label' => t('full_teaser'),
+    'custom settings' => TRUE,
+  );
+}
