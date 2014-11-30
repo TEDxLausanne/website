@@ -67,11 +67,11 @@ function tedxlausanne_site_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-last_event-block' => array(
+        'views-last_event-block_1' => array(
           'module' => 'views',
-          'delta' => 'last_event-block',
+          'delta' => 'last_event-block_1',
           'region' => 'full_header',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'views-homepage_speaker-block' => array(
           'module' => 'views',
