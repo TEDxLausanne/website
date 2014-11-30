@@ -31,6 +31,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -83,6 +89,16 @@ function tedxlausanne_event_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 0,
+      ),
+      'full_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'banner',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -154,6 +170,19 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'date_default',
         'weight' => 3,
       ),
+      'full_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'short',
+          'fromto' => 'value',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -214,6 +243,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 8,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -256,6 +291,13 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'full_teaser' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -310,6 +352,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 5,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -322,6 +370,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Registration Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -335,6 +384,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -365,6 +415,12 @@ function tedxlausanne_event_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 7,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -414,6 +470,13 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -450,6 +513,13 @@ function tedxlausanne_event_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'full_teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -498,6 +568,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -541,6 +617,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 1,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -553,6 +635,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Links',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -566,6 +649,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -596,6 +680,12 @@ function tedxlausanne_event_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -649,6 +739,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -692,6 +788,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -729,6 +831,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -768,6 +876,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 2,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -781,6 +895,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Links',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -794,6 +909,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -823,6 +939,12 @@ function tedxlausanne_event_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -880,6 +1002,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -940,6 +1068,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 3,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -997,6 +1131,12 @@ function tedxlausanne_event_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'search_result' => array(
@@ -1077,6 +1217,12 @@ function tedxlausanne_event_field_default_field_instances() {
         ),
         'type' => 'youtube_video',
         'weight' => 2,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'hidden',

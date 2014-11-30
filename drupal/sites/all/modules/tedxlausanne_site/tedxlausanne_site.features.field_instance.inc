@@ -24,6 +24,12 @@ function tedxlausanne_site_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -71,6 +77,12 @@ function tedxlausanne_site_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 2,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -108,6 +120,12 @@ function tedxlausanne_site_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(

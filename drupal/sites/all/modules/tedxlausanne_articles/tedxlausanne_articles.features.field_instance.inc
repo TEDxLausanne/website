@@ -24,6 +24,12 @@ function tedxlausanne_articles_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -71,6 +77,12 @@ function tedxlausanne_articles_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 11,
       ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -109,6 +121,12 @@ function tedxlausanne_articles_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => -1,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -161,6 +179,12 @@ function tedxlausanne_articles_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 10,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
