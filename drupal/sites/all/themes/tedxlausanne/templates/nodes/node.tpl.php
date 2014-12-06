@@ -107,9 +107,9 @@ hide($content['links']);
     ?>
   </div>
 
-  <?php print render($content['links']); ?>
+  <?php //print render($content['links']); ?>
 
-  <?php print render($content['comments']); ?>
+  <?php //print render($content['comments']); ?>
 
   <?php print render($content['field_image_principal']); ?>
 

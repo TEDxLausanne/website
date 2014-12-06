@@ -81,8 +81,10 @@
  */
 // We hide the comments and links now so that we can render them later.
 hide($content['comments']);
+hide($content['links']);
 hide($content['field_talk_event']);
 hide($content['field_talk_speaker']);
+hide($content['field_talk_video']);
 ?>
 
 <!-- <a class="speaker" href="#">
@@ -115,6 +117,9 @@ hide($content['field_talk_speaker']);
         </div>
       <?php endif; ?>
       <div class="content"<?php print $content_attributes; ?>>
+        <div class="isolate">
+          <?php print render($content['field_talk_video']); ?>
+        </div>
         <?php
         print render($content);
         ?>
