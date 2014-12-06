@@ -60,6 +60,13 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
+  /* Filter criterion: Content: Highlight (field_event_highlight) */
+  $handler->display->display_options['filters']['field_event_highlight_value']['id'] = 'field_event_highlight_value';
+  $handler->display->display_options['filters']['field_event_highlight_value']['table'] = 'field_data_field_event_highlight';
+  $handler->display->display_options['filters']['field_event_highlight_value']['field'] = 'field_event_highlight_value';
+  $handler->display->display_options['filters']['field_event_highlight_value']['value'] = array(
+    0 => '0',
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

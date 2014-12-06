@@ -181,7 +181,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -198,7 +198,7 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'p',
+    'fences_wrapper' => 'b',
     'field_name' => 'field_event_date',
     'label' => 'Event date',
     'required' => 0,
@@ -301,7 +301,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -312,7 +312,7 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'p',
+    'fences_wrapper' => 'span',
     'field_name' => 'field_event_location',
     'label' => 'Event Location',
     'required' => 0,
@@ -472,10 +472,9 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
       'full_teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',

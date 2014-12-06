@@ -84,6 +84,8 @@ hide($content['comments']);
 hide($content['links']);
 hide($content['field_title']);
 hide($content['field_event_banner']);
+hide($content['field_event_date']);
+hide($content['field_event_location']);
 hide($content['field_event_title']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
@@ -116,6 +118,8 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
         print render($content);
         ?>
         </p>
+
+        <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
 
       </div>
     </div>

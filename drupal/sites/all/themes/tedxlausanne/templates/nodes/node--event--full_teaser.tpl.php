@@ -84,16 +84,14 @@ hide($content['comments']);
 hide($content['links']);
 hide($content['field_title']);
 hide($content['field_event_banner']);
+hide($content['field_event_date']);
+hide($content['field_event_location']);
 hide($content['field_event_title']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
 
  <a href="<?php print $node_url; ?>">
-
-  <div>
-    <?php print render($content['field_event_banner']); ?>
-  </div>
 
   <?php if ($display_submitted): ?>
     <div class="submitted">
@@ -102,20 +100,23 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <div class="container">
+    <div class="banner banner-dark banner-main" style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>');">
       <div class="row">
         <div class="col-xs-12 text-center">
+          <h3><?php print render($content['field_event_title']); ?></h3>
           <?php print render($title_prefix); ?>
           <?php if (!$page): ?>
-            <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+            <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
           <?php endif; ?>
           <?php print render($title_suffix); ?>
-          <h3><?php print render($content['field_event_title']); ?></h3>
+
           <p>
             <?php
             print render($content);
             ?>
           </p>
+          <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
+          <div class="isolate">&nbsp;</div>
         </div>
       </div>
 
@@ -123,4 +124,7 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 
   </div>
 </a>
+<div class="text-center">
+  <a href="<?php print $node_url; ?>" class="btn btn-primary btn-lg" style="margin-top: -120px;">Register now</a>
+</div>
 </div>
