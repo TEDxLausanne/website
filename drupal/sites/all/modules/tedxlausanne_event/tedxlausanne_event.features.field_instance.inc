@@ -1052,9 +1052,10 @@ function tedxlausanne_event_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => 1,
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 3,
       ),
       'full' => array(
@@ -1091,7 +1092,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
     'field_name' => 'field_talk_event',
-    'label' => 'Featured in this event',
+    'label' => 'Featured at',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1317,7 +1318,7 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Event Location');
   t('Event Title');
   t('Event date');
-  t('Featured in this event');
+  t('Featured at');
   t('Featured on homepage');
   t('Get displayed on the frontpage');
   t('Highlight');

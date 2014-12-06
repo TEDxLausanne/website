@@ -46,7 +46,7 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['sorts']['title']['order'] = 'DESC';
-  /* Contextual filter: Content: Featured in this event (field_talk_event) */
+  /* Contextual filter: Content: Featured at (field_talk_event) */
   $handler->display->display_options['arguments']['field_talk_event_target_id']['id'] = 'field_talk_event_target_id';
   $handler->display->display_options['arguments']['field_talk_event_target_id']['table'] = 'field_data_field_talk_event';
   $handler->display->display_options['arguments']['field_talk_event_target_id']['field'] = 'field_talk_event_target_id';
