@@ -98,7 +98,8 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'semanticviews_default';
   $handler->display->display_options['style_options']['list']['class'] = 'row';
   $handler->display->display_options['style_options']['row']['first_class'] = 'col-sm-3';
@@ -131,6 +132,13 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'talk' => 'talk',
+  );
+  /* Filter criterion: Content: Featured on homepage (field_talk_highlight) */
+  $handler->display->display_options['filters']['field_talk_highlight_value']['id'] = 'field_talk_highlight_value';
+  $handler->display->display_options['filters']['field_talk_highlight_value']['table'] = 'field_data_field_talk_highlight';
+  $handler->display->display_options['filters']['field_talk_highlight_value']['field'] = 'field_talk_highlight_value';
+  $handler->display->display_options['filters']['field_talk_highlight_value']['value'] = array(
+    1 => '1',
   );
 
   /* Display: Block */

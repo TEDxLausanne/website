@@ -1038,7 +1038,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => -4,
     ),
   );
 
@@ -1103,6 +1103,53 @@ function tedxlausanne_event_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-talk-field_talk_highlight'
+  $field_instances['node-talk-field_talk_highlight'] = array(
+    'bundle' => 'talk',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'If you select ON, this talk will appear on homepage Featured talks section',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_talk_highlight',
+    'label' => 'Featured on homepage',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => -2,
     ),
   );
 
@@ -1174,7 +1221,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 3,
+      'weight' => -3,
     ),
   );
 
@@ -1272,8 +1319,10 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Event Title');
   t('Event date');
   t('Featured in this event');
+  t('Featured on homepage');
   t('Get displayed on the frontpage');
   t('Highlight');
+  t('If you select ON, this talk will appear on homepage Featured talks section');
   t('In one sentence');
   t('Links');
   t('Logo');

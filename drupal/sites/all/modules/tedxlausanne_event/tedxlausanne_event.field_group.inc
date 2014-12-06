@@ -115,7 +115,8 @@ function tedxlausanne_event_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_talk_speaker',
-      2 => 'title',
+      2 => 'field_talk_highlight',
+      3 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
