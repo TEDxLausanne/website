@@ -87,6 +87,7 @@ hide($content['field_event_banner']);
 hide($content['field_event_date']);
 hide($content['field_event_location']);
 hide($content['field_event_title']);
+hide($content['field_event_registration_link']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
 <div href="<?php print $node_url; ?>"  id="node-<?php print $node->nid; ?>" class="clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
@@ -125,4 +126,7 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
     </div>
   </div>
 </a>
+<div class="text-center">
+  <?php print render($content['field_event_registration_link']); ?>
+</div>
 </div>
