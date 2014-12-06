@@ -101,7 +101,9 @@ hide($content['field_speaker_picture']);
 
     <div class="row media">
       <div class="col-md-4 col-sm-3 media-left">
-        <?php print render($content['field_speaker_picture']); ?>
+        <div class="full-image">
+          <?php print render($content['field_speaker_picture']); ?>
+        </div>
       </div>
       <div class="col-md-8 col-sm-9 media-body">
 
