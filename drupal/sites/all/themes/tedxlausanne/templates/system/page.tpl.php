@@ -185,6 +185,9 @@
   </div>
 </div>
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5292e5893bc7c96e" async="async"></script>
+
 
 <footer class="footer dark-background">
   <div class="container super-isolate">
@@ -200,7 +203,7 @@
           <!-- <li><a href="#">Credits</a></li> -->
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <h4>Get Involved</h4>
         <?php if (!empty($page['footer_menu'])): ?>
           <?php print render($page['footer_menu']); ?>
@@ -217,16 +220,10 @@
           <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
       </div>
-      <div class="col-md-2">
-        <h4>Connect with us</h4>
-        <ul>
-         <li><a href="http://twitter.com/TEDxLausanne"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-         <li><a href="http://www.facebook.com/TEDxLausanne"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-         <li><a href="http://www.linkedin.com/company/tedxlausanne"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-         <li><a href="http://instagram.com/tedxlausanne"><i class="fa fa-instagram"></i> Instagram</a></li>
-         <li><a href="https://www.youtube.com/channel/UC97FXhbvEbpb9Bb2YvUDwqw"><i class="fa fa-youtube"></i> Youtube</a></li>
-         <li><a href="http://www.flickr.com/photos/tedxlausanne/"><i class="fa fa-flickr"></i> flickr</a></li>
-       </ul>
+      <div class="col-md-3">
+      <h4>Connect with&nbsp;us</h4>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_horizontal_follow_toolbox"></div>
      </div>
    </div>
  </div>
