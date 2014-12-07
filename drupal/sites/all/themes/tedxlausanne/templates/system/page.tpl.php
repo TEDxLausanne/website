@@ -174,9 +174,10 @@
 
 
     <?php if (!empty($page['full_footer'])): ?>
-      <div class="well">
+      <div class="well unisolate-bottom">
         <div class="container">
           <?php print render($page['full_footer']); ?>
+          <div class="isolate"></div>
         </div>
       </div>
     <?php endif; ?>
