@@ -124,15 +124,12 @@ hide($content['field_talk_video']);
         print render($content);
         ?>
       </div>
+      <hr>
+      <?php print render($content['field_talk_speaker']); ?>
     </div>
     <aside class="col-md-3 col-md-offset-1" role="complementary">
       <?php print render($content['field_talk_event']); ?>
     </aside>  <!-- /#sidebar-second -->
   </div>
-  <div class="row">
-    <div class="col-md-8">
-      <hr>
-      <?php print render($content['field_talk_speaker']); ?>
-    </div>
-  </div>
+
 </div>
