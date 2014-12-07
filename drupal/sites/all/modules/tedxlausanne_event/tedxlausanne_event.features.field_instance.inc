@@ -490,7 +490,7 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'h4',
+    'fences_wrapper' => 'p',
     'field_name' => 'field_event_teaser',
     'label' => 'Teaser',
     'required' => 1,
