@@ -34,9 +34,9 @@ function tedxlausanne_site_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 200,
+          'trim_length' => 120,
         ),
-        'type' => 'text_summary_or_trimmed',
+        'type' => 'text_trimmed',
         'weight' => 0,
       ),
     ),
@@ -56,7 +56,7 @@ function tedxlausanne_site_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => -4,
     ),
   );
 
@@ -71,7 +71,7 @@ function tedxlausanne_site_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'full_teaser' => array(
         'label' => 'above',
@@ -99,6 +99,53 @@ function tedxlausanne_site_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_page_highlight'
+  $field_instances['node-page-field_page_highlight'] = array(
+    'bundle' => 'page',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_page_highlight',
+    'label' => 'Featured on homepage',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => -3,
     ),
   );
 
@@ -434,6 +481,7 @@ function tedxlausanne_site_field_default_field_instances() {
   t('Bio');
   t('Body');
   t('Event');
+  t('Featured on homepage');
   t('Full name');
   t('Function');
   t('Image');

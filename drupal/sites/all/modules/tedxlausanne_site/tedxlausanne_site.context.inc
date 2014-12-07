@@ -67,6 +67,12 @@ function tedxlausanne_site_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-featured_pages-block' => array(
+          'module' => 'views',
+          'delta' => 'featured_pages-block',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
         'views-last_event-block_1' => array(
           'module' => 'views',
           'delta' => 'last_event-block_1',

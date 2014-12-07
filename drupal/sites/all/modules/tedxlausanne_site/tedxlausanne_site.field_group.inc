@@ -24,7 +24,8 @@ function tedxlausanne_site_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'body',
-      1 => 'title',
+      1 => 'field_page_highlight',
+      2 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
