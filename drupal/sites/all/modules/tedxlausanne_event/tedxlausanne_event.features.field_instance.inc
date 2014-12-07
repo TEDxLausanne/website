@@ -32,9 +32,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'weight' => 2,
       ),
       'full_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
         'weight' => 8,
       ),
       'teaser' => array(
@@ -247,7 +250,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -353,10 +356,11 @@ function tedxlausanne_event_field_default_field_instances() {
         'weight' => 5,
       ),
       'full_teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
+        'type' => 'link_default',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -420,7 +424,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -472,8 +476,9 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
       'full_teaser' => array(
         'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'text_default',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -485,7 +490,7 @@ function tedxlausanne_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'p',
+    'fences_wrapper' => 'h4',
     'field_name' => 'field_event_teaser',
     'label' => 'Teaser',
     'required' => 1,
