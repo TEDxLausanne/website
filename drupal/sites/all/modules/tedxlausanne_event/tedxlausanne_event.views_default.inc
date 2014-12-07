@@ -278,8 +278,7 @@ function tedxlausanne_event_views_default_views() {
   /* Display: Full block */
   $handler = $view->new_display('block', 'Full block', 'block_1');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'node';
