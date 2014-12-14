@@ -10,6 +10,11 @@
  */
 function tedxlausanne_preprocess_page(&$variables) {
 
+  // Display speaker name in the talk title
+  if(isset($variables['node']) && isset($variables['node']->field_talk_speaker['und'][0]['entity']->title) && $variables['node']->type == 'talk'){
+    $speaker = $variables['node']->field_talk_speaker['und'][0]['entity']->title;
+    $variables['title'] = '<strong>'.$speaker.'</strong><br/> '.$variables['node']->title;
+  }
 
 }
 
@@ -28,7 +33,6 @@ function tedxlausanne_preprocess_node(&$variables) {
   if($variables['view_mode'] == 'full_teaser') {
     $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__full_teaser';
   }
-  // if (module_exists('devel')) {
-  //   dpm($variables);
-  // }
+
+
 }
