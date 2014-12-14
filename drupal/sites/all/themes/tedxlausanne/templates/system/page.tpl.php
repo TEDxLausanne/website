@@ -197,45 +197,57 @@
 
 </script>
 
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5292e5893bc7c96e" async="async"></script>
-
 
 <footer class="footer dark-background">
   <div class="container super-isolate">
     <div class="row">
-      <div class="col-md-2">
-        <?php if (!empty($page['footer'])): ?>
-        <?php print render($page['footer']); ?>
-        <?php endif; ?>
-        <h4>TEDXLausanne</h4>
-        <p>This independently organized TEDx event is operated under license from TED.</p>
-        <ul class="nav nav-pills">
-          <li><a href="/about-tedxlausanne">About</a></li>
-          <!-- <li><a href="#">Credits</a></li> -->
-        </ul>
+      <div class="col-md-2 col-sm-7">
+        <div class="footer-col">
+          <?php if (!empty($page['footer'])): ?>
+            <?php print render($page['footer']); ?>
+          <?php endif; ?>
+          <h4>TEDXLausanne</h4>
+          <p><small>This independently organized TEDx event is operated under license from TED.</small></p>
+          <ul class="nav nav-links nav-pills uppercase">
+            <li><a href="/about-tedxlausanne">About</a></li>
+            <!-- <li><a href="#">Credits</a></li> -->
+          </ul>
+        </div>
       </div>
-      <div class="col-md-2">
-        <h4>Get Involved</h4>
-        <?php if (!empty($page['footer_menu'])): ?>
-          <?php print render($page['footer_menu']); ?>
-        <?php endif; ?>
+      <div class="col-md-3 col-sm-5">
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <?php if (!empty($page['footer_menu'])): ?>
+            <?php print render($page['footer_menu']); ?>
+          <?php endif; ?>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h4>Newsletter</h4>
-        <p>Get in touch with us and subscribe to our newsletter</p>
-        <form class="form-inline" role="form" action="http://newsletter.tedxlausanne.org/t/d/s/jkldkj/" method="post">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input id="fieldEmail" name="cm-jkldkj-jkldkj" type="email" class="form-control" placeholder="Enter email" required />
-          </div>
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </form>
+      <div class="clearfix visible-sm-block">
+        <div class="super-isolate"></div>
       </div>
-      <div class="col-md-3">
-      <h4>Connect with&nbsp;us</h4>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="addthis_horizontal_follow_toolbox"></div>
+      <div class="col-md-4 col-sm-7">
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Get in touch with us and subscribe to our newsletter</p>
+          <form class="form-inline" role="form" action="http://newsletter.tedxlausanne.org/t/d/s/jkldkj/" method="post">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail2">Email address</label>
+              <input id="fieldEmail" name="cm-jkldkj-jkldkj" type="email" class="form-control" placeholder="Enter email" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-5">
+        <h4>Connect with&nbsp;us</h4>
+        <ul class="nav-social nav nav-pills">
+         <li><a href="http://www.twitter.com/TEDxLausanne"><i class="fa fa-twitter"></i><span>Twitter</span></a></a></li>
+         <li><a href="https://www.facebook.com/TEDxLausanne"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+         <li><a href="https://www.linkedin.com/company/tedxlausanne"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
+         <li><a href="http://instagram.com/tedxlausanne"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+         <li><a href="https://www.youtube.com/channel/UC97FXhbvEbpb9Bb2YvUDwqw?sub_confirmation=1"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>
+         <li><a href="https://www.flickr.com/photos/tedxlausanne"><i class="fa fa-flickr"></i><span>Flickr</span></a></li>
+       </ul>
      </div>
    </div>
  </div>
