@@ -24,6 +24,57 @@ function tedxlausanne_site_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_custom_breadcrumb_features_default_settings().
+ */
+function tedxlausanne_site_custom_breadcrumb_features_default_settings() {
+  $custom_breadcrumbs = array();
+
+  // Exported custom breadcrumb: event.
+  $custom_breadcrumbs['event'] = array(
+    'name' => 'Event',
+    'titles' => 'Events',
+    'paths' => 'events',
+    'visibility_php' => '',
+    'node_type' => 'event',
+    'language' => '',
+    'machine_name' => 'event',
+  );
+
+  // Exported custom breadcrumb: talk.
+  $custom_breadcrumbs['talk'] = array(
+    'name' => 'talk',
+    'titles' => 'Talks',
+    'paths' => 'watch',
+    'visibility_php' => '',
+    'node_type' => 'talk',
+    'language' => '',
+    'machine_name' => 'talk',
+  );
+
+  return $custom_breadcrumbs;
+}
+
+/**
+ * Implements hook_custom_breadcrumbs_views_features_default_settings().
+ */
+function tedxlausanne_site_custom_breadcrumbs_views_features_default_settings() {
+  $custom_breadcrumbs = array();
+
+  // Exported custom breadcrumb: watch.
+  $custom_breadcrumbs['watch'] = array(
+    'name' => 'watch',
+    'titles' => 'Home',
+    'paths' => '',
+    'visibility_php' => '',
+    'views_path' => 'watch',
+    'language' => '',
+    'machine_name' => 'watch',
+  );
+
+  return $custom_breadcrumbs;
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function tedxlausanne_site_image_default_styles() {
