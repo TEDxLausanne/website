@@ -447,9 +447,9 @@ function tedxlausanne_event_views_default_views() {
       'value' => 'TEDxLausanne 2014',
     ),
     3 => array(
-      'title' => 'TEDxLausanne 2013',
+      'title' => 'TEDxLausanneChange 2013',
       'operator' => '=',
-      'value' => 'TEDxLausanne 2013',
+      'value' => 'TEDxLausanneChange 2013',
     ),
   );
 
