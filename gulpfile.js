@@ -17,6 +17,11 @@ gulp.task('build-images', function() {
           .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/img'));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src(['../tedxlausanne-styleguide/build/fonts/**'])
+          .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/fonts'));
+});
+
 gulp.task('scripts', function() {
   return gulp.src(['../tedxlausanne-styleguide/build/js/**'])
           .pipe(concat('main.js'))
@@ -39,4 +44,4 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/css'));
 });
 
-gulp.task('default', ['styles', 'scripts', 'build-images']);
+gulp.task('default', ['styles', 'scripts', 'build-images', 'fonts']);
