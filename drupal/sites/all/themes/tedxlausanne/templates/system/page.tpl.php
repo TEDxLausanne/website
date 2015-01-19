@@ -75,7 +75,6 @@
 ?>
 <header id="navbar" role="banner" class="header <?php print $navbar_classes; ?> isolate">
   <div class="row">
-    <div class="col-lg-12">
       <div class="navbar-header">
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $base_path . $directory; ?>/assets/img/logo_tedx.svg" onerror="this.onerror=null; this.src='<?php print $base_path . $directory; ?>/assets/img/logo_tedx.png'" alt="<?php print t('Home'); ?>" />
@@ -100,7 +99,6 @@
         </div>
       <?php endif; ?>
     </div>
-  </div>
 </header>
 
 <div class="main-container">
