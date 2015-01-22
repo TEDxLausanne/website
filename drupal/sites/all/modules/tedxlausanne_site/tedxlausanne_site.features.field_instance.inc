@@ -36,7 +36,7 @@ function tedxlausanne_site_field_default_field_instances() {
         'settings' => array(
           'trim_length' => 120,
         ),
-        'type' => 'text_trimmed',
+        'type' => 'text_summary_or_trimmed',
         'weight' => 0,
       ),
     ),

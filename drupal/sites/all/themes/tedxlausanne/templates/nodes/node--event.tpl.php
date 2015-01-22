@@ -120,6 +120,13 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
         <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
         <hr>
         <?php print render($content['field_event_registration_link']); ?>
+
+        <hr>
+
+        <?php if ($region['event_sidebar']): ?>
+          <?php print render($region['event_sidebar']); ?>
+        <?php endif; ?>
+
     </div>
     </div>
   </div>

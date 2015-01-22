@@ -34,5 +34,10 @@ function tedxlausanne_preprocess_node(&$variables) {
     $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__full_teaser';
   }
 
+  if($variables['node']->type == 'event') {
+    // Load the blocks for the current context using the block reaction plugin for the current context...
+    $reaction = context_get_plugin('reaction', 'block');
+    $variables['region']['event_sidebar'] = ($reaction->block_get_blocks_by_region('event_sidebar'));
+  }
 
 }
