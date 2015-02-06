@@ -100,7 +100,7 @@ hide($content['field_sponsor_logo']);
 </a>
  -->
 <div id="node-<?php print $node->nid; ?>" class="mediacard <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <div class="mediacard-photo" style="background-color:#fff; padding:10px;">
+  <div class="mediacard-photo">
         <?php print render($content['field_sponsor_logo']); ?>
     </div>
 </div>

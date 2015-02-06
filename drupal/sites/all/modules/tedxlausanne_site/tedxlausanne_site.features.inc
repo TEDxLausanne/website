@@ -40,6 +40,17 @@ function tedxlausanne_site_custom_breadcrumb_features_default_settings() {
     'machine_name' => 'event',
   );
 
+  // Exported custom breadcrumb: sponsor.
+  $custom_breadcrumbs['sponsor'] = array(
+    'name' => 'Sponsor',
+    'titles' => 'Sponsors',
+    'paths' => '',
+    'visibility_php' => '',
+    'node_type' => 'sponsor',
+    'language' => '',
+    'machine_name' => 'sponsor',
+  );
+
   // Exported custom breadcrumb: talk.
   $custom_breadcrumbs['talk'] = array(
     'name' => 'talk',
