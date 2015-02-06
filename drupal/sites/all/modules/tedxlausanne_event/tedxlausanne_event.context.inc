@@ -35,6 +35,12 @@ function tedxlausanne_event_context_default_contexts() {
           'region' => 'event_sidebar',
           'weight' => '-10',
         ),
+        'views-event_sponsors-block' => array(
+          'module' => 'views',
+          'delta' => 'event_sponsors-block',
+          'region' => 'full_footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

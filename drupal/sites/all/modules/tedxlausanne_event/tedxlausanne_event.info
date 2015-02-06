@@ -86,6 +86,7 @@ features[node][] = sponsor
 features[node][] = talk
 features[taxonomy][] = sponsor_level
 features[views_view][] = event_featured_page
+features[views_view][] = event_sponsors
 features[views_view][] = event_talks
 features[views_view][] = events
 features[views_view][] = homepage_speaker
