@@ -31,7 +31,7 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '2';
+  $handler->display->display_options['style_options']['columns'] = '3';
   $handler->display->display_options['style_options']['class_prefix'] = 'col-md';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
