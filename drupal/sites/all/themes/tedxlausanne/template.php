@@ -16,6 +16,12 @@ function tedxlausanne_preprocess_page(&$variables) {
     $variables['title'] = '<strong>'.$speaker.'</strong><br/> '.$variables['node']->title;
   }
 
+  // Display sponsors level in sponsor title
+  if(isset($variables['node']) && isset($variables['node']->field_sponsor_level['und'][0]['taxonomy_term']->name) &&$variables['node']->type == 'sponsor'){
+    $sponsor_level = $variables['node']->field_sponsor_level['und'][0]['taxonomy_term']->name;
+    $variables['title'] = '<strong>'.$sponsor_level.'</strong><br/> '.$variables['node']->title;
+  }
+
 }
 
 /**

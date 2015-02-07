@@ -35,11 +35,29 @@ function tedxlausanne_event_context_default_contexts() {
           'region' => 'event_sidebar',
           'weight' => '-10',
         ),
-        'views-event_sponsors-block' => array(
+        'views-clone_of_event_sponsors-block' => array(
           'module' => 'views',
-          'delta' => 'event_sponsors-block',
+          'delta' => 'clone_of_event_sponsors-block',
           'region' => 'full_footer',
-          'weight' => '-10',
+          'weight' => '-9',
+        ),
+        'views-event_sponsors-block_1' => array(
+          'module' => 'views',
+          'delta' => 'event_sponsors-block_1',
+          'region' => 'full_footer',
+          'weight' => '-8',
+        ),
+        'views-silver_event_sponsors-block_1' => array(
+          'module' => 'views',
+          'delta' => 'silver_event_sponsors-block_1',
+          'region' => 'full_footer',
+          'weight' => '-7',
+        ),
+        'views-startup_event_sponsors-block_1' => array(
+          'module' => 'views',
+          'delta' => 'startup_event_sponsors-block_1',
+          'region' => 'full_footer',
+          'weight' => '-6',
         ),
       ),
     ),

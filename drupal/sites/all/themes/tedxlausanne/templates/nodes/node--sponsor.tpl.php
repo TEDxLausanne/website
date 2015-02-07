@@ -84,6 +84,8 @@ hide($content['comments']);
 hide($content['links']);
 hide($content['field_sponsor_event']);
 hide($content['field_sponsor_logo']);
+hide($content['field_sponsor_level']);
+
 ?>
 
 <!-- <a class="speaker" href="#">
