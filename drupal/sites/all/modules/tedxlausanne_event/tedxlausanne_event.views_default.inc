@@ -522,7 +522,7 @@ function tedxlausanne_event_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Coming soon';
+  $handler->display->display_options['title'] = 'Related event';
 
   /* Display: Full block */
   $handler = $view->new_display('block', 'Full block', 'block_1');
