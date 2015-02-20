@@ -108,6 +108,38 @@ function tedxlausanne_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_sponsor_level_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_level_tid']['vocabulary'] = 'sponsor_level';
+
+  /* Display: Platinium Block not event specific */
+  $handler = $view->new_display('block', 'Platinium Block not event specific', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Platinium sponsors';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sponsor' => 'sponsor',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Sponsor level (field_sponsor_level) */
+  $handler->display->display_options['filters']['field_sponsor_level_tid']['id'] = 'field_sponsor_level_tid';
+  $handler->display->display_options['filters']['field_sponsor_level_tid']['table'] = 'field_data_field_sponsor_level';
+  $handler->display->display_options['filters']['field_sponsor_level_tid']['field'] = 'field_sponsor_level_tid';
+  $handler->display->display_options['filters']['field_sponsor_level_tid']['value'] = array(
+    11 => '11',
+  );
+  $handler->display->display_options['filters']['field_sponsor_level_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_sponsor_level_tid']['vocabulary'] = 'sponsor_level';
   $export['clone_of_event_sponsors'] = $view;
 
   $view = new view();
@@ -246,6 +278,10 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Gold Block */
   $handler = $view->new_display('block', 'Gold Block', 'block_1');
+
+  /* Display: Gold Block not event specific */
+  $handler = $view->new_display('block', 'Gold Block not event specific', 'block_2');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $export['event_sponsors'] = $view;
 
   $view = new view();
@@ -605,6 +641,10 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Silver Block */
   $handler = $view->new_display('block', 'Silver Block', 'block_1');
+
+  /* Display: Silver Block not event specific */
+  $handler = $view->new_display('block', 'Silver Block not event specific', 'block_2');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $export['silver_event_sponsors'] = $view;
 
   $view = new view();
@@ -677,6 +717,10 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Startup Block */
   $handler = $view->new_display('block', 'Startup Block', 'block_1');
+
+  /* Display: Startup Block not event specific */
+  $handler = $view->new_display('block', 'Startup Block not event specific', 'block_2');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $export['startup_event_sponsors'] = $view;
 
   $view = new view();

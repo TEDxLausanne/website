@@ -13,6 +13,56 @@ function tedxlausanne_event_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'all_sponsors';
+  $context->description = '';
+  $context->tag = 'pages';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'our-sponsors' => 'our-sponsors',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-event_sponsors-block_2' => array(
+          'module' => 'views',
+          'delta' => 'event_sponsors-block_2',
+          'region' => 'content',
+          'weight' => '2',
+        ),
+        'views-silver_event_sponsors-block_2' => array(
+          'module' => 'views',
+          'delta' => 'silver_event_sponsors-block_2',
+          'region' => 'content',
+          'weight' => '3',
+        ),
+        'views-startup_event_sponsors-block_2' => array(
+          'module' => 'views',
+          'delta' => 'startup_event_sponsors-block_2',
+          'region' => 'content',
+          'weight' => '5',
+        ),
+        'views-clone_of_event_sponsors-block_1' => array(
+          'module' => 'views',
+          'delta' => 'clone_of_event_sponsors-block_1',
+          'region' => 'content',
+          'weight' => '0',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('pages');
+  $export['all_sponsors'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'event_detail';
   $context->description = 'Event detail page';
   $context->tag = 'event';
