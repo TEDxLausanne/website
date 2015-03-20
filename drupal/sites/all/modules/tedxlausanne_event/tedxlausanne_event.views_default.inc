@@ -30,9 +30,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '3';
-  $handler->display->display_options['style_options']['class_prefix'] = 'col-md';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '3';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -228,9 +230,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '4';
-  $handler->display->display_options['style_options']['class_prefix'] = 'col-md';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -305,8 +309,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '24';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '4';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Field: Content: Title */
@@ -439,11 +446,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
-  $handler->display->display_options['style_options']['list']['class'] = 'row';
-  $handler->display->display_options['style_options']['row']['first_class'] = 'col-sm-3';
-  $handler->display->display_options['style_options']['row']['last_class'] = 'col-sm-3';
-  $handler->display->display_options['style_options']['row']['last_every_nth'] = '1';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Footer: Global: Unfiltered text */
@@ -591,9 +598,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '6';
-  $handler->display->display_options['style_options']['class_prefix'] = 'col-md';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -667,9 +676,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '8';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '6';
-  $handler->display->display_options['style_options']['class_prefix'] = 'col-md';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '6';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '6';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -743,8 +754,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '4';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Field: Content: Title */
@@ -808,8 +822,11 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '48';
-  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '4';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_responsive_grid_plugin_style';
+  $handler->display->display_options['style_options']['item_per_row_xs'] = '2';
+  $handler->display->display_options['style_options']['item_per_row_sm'] = '3';
+  $handler->display->display_options['style_options']['item_per_row_md'] = '4';
+  $handler->display->display_options['style_options']['item_per_row_lg'] = '4';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
