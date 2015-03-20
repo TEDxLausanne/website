@@ -65,6 +65,7 @@ dependencies[] = update
 dependencies[] = user
 dependencies[] = views
 dependencies[] = views_bootstrap
+dependencies[] = views_bootstrap_responsive_grid
 dependencies[] = views_content
 dependencies[] = views_ui
 dependencies[] = youtube
