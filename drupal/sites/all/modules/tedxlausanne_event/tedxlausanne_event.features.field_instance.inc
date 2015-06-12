@@ -53,6 +53,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -121,6 +122,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -210,6 +212,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -265,6 +268,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Highlight',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -320,6 +324,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Event Location',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -389,6 +394,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_label_use_field_label' => 0,
@@ -438,6 +444,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'talks',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -495,6 +502,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Teaser',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -544,6 +552,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Event Title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -592,6 +601,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -651,6 +661,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_label_use_field_label' => FALSE,
@@ -709,6 +720,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -765,6 +777,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -815,6 +828,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Event',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -859,6 +873,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Sponsor level',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -915,6 +930,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_label_use_field_label' => FALSE,
@@ -978,6 +994,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1045,6 +1062,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1113,6 +1131,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Featured at',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1160,6 +1179,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Featured on homepage',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1228,6 +1248,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Talk speaker',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1316,6 +1337,7 @@ function tedxlausanne_event_field_default_field_instances() {
     'label' => 'Talk video',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(

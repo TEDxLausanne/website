@@ -71,6 +71,17 @@ function tedxlausanne_site_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['featured_pages'] = array(
+    t('Master'),
+    t('<none>'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Block'),
+  );
   $export['featured_pages'] = $view;
 
   return $export;

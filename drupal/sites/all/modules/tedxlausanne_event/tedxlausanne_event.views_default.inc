@@ -142,6 +142,20 @@ function tedxlausanne_event_views_default_views() {
   );
   $handler->display->display_options['filters']['field_sponsor_level_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_level_tid']['vocabulary'] = 'sponsor_level';
+  $translatables['clone_of_event_sponsors'] = array(
+    t('Master'),
+    t('Gold sponsors'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Platinium Block'),
+    t('Platinium sponsors'),
+    t('Platinium Block not event specific'),
+  );
   $export['clone_of_event_sponsors'] = $view;
 
   $view = new view();
@@ -208,6 +222,18 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['event_featured_page'] = array(
+    t('Master'),
+    t('<none>'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Block'),
+  );
   $export['event_featured_page'] = $view;
 
   $view = new view();
@@ -286,6 +312,19 @@ function tedxlausanne_event_views_default_views() {
   /* Display: Gold Block not event specific */
   $handler = $view->new_display('block', 'Gold Block not event specific', 'block_2');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $translatables['event_sponsors'] = array(
+    t('Master'),
+    t('Gold sponsors'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Gold Block'),
+    t('Gold Block not event specific'),
+  );
   $export['event_sponsors'] = $view;
 
   $view = new view();
@@ -354,6 +393,18 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['event_talks'] = array(
+    t('Master'),
+    t('Event Talks'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Block'),
+  );
   $export['event_talks'] = $view;
 
   $view = new view();
@@ -426,6 +477,24 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['events'] = array(
+    t('Master'),
+    t('Previous events'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+  );
   $export['events'] = $view;
 
   $view = new view();
@@ -502,6 +571,23 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['homepage_speaker'] = array(
+    t('Master'),
+    t('Featured talks'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Watch more talk'),
+    t('<div class="row">
+    <div class="col-xs-12 text-center">
+        <a href="/watch" class="btn btn-default isolated btn-lg">Watch more talks</a>
+    </div>
+</div>'),
+    t('Block'),
+  );
   $export['homepage_speaker'] = $view;
 
   $view = new view();
@@ -579,6 +665,19 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'full_teaser';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $translatables['last_event'] = array(
+    t('Master'),
+    t('<none>'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Block'),
+    t('Related event'),
+    t('Full block'),
+  );
   $export['last_event'] = $view;
 
   $view = new view();
@@ -657,6 +756,19 @@ function tedxlausanne_event_views_default_views() {
   /* Display: Silver Block not event specific */
   $handler = $view->new_display('block', 'Silver Block not event specific', 'block_2');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $translatables['silver_event_sponsors'] = array(
+    t('Master'),
+    t('Silver sponsors'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Silver Block'),
+    t('Silver Block not event specific'),
+  );
   $export['silver_event_sponsors'] = $view;
 
   $view = new view();
@@ -735,6 +847,19 @@ function tedxlausanne_event_views_default_views() {
   /* Display: Startup Block not event specific */
   $handler = $view->new_display('block', 'Startup Block not event specific', 'block_2');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $translatables['startup_event_sponsors'] = array(
+    t('Master'),
+    t('Startup sponsors'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Startup Block'),
+    t('Startup Block not event specific'),
+  );
   $export['startup_event_sponsors'] = $view;
 
   $view = new view();
@@ -803,6 +928,18 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['talk_speaker'] = array(
+    t('Master'),
+    t('Featuring talk'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('All'),
+    t('Block'),
+  );
   $export['talk_speaker'] = $view;
 
   $view = new view();
@@ -909,6 +1046,26 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['watch'] = array(
+    t('Master'),
+    t('Watch the TEDxLausanne talks'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Content entity referenced from field_talk_event'),
+    t('Event'),
+    t('Page'),
+  );
   $export['watch'] = $view;
 
   return $export;

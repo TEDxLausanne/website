@@ -46,6 +46,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -91,6 +92,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'label' => 'Event',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -138,6 +140,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'label' => 'Featured on homepage',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -185,6 +188,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -233,6 +237,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => 0,
     ),
@@ -275,6 +280,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'label' => 'Full name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => 1,
     ),
@@ -316,6 +322,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'label' => 'Function',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => 1,
     ),
     'widget' => array(
@@ -366,6 +373,7 @@ function tedxlausanne_site_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_label_use_field_label' => FALSE,
@@ -418,6 +426,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -465,6 +474,7 @@ function tedxlausanne_site_field_default_field_instances() {
     'label' => 'Team',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => 1,
     ),
     'widget' => array(
