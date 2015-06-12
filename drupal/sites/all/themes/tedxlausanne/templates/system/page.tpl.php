@@ -73,6 +73,7 @@
  * @ingroup themeable
  */
 ?>
+
 <header id="navbar" role="banner" class="header <?php print $navbar_classes; ?> isolate">
   <div class="row">
       <div class="navbar-header">
@@ -96,6 +97,7 @@
               <?php print render($primary_nav); ?>
             <?php endif; ?>
           </nav>
+          <nav class="lang-nav"><?php print render($page['language']); ?></nav>
         </div>
       <?php endif; ?>
     </div>
