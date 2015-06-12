@@ -96,5 +96,33 @@ function tedxlausanne_site_context_default_contexts() {
   t('homepage');
   $export['homepage'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'site_wide';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'context' => array(
+      'values' => array(
+        '*' => '*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'locale-language' => array(
+          'module' => 'locale',
+          'delta' => 'language',
+          'region' => 'language',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['site_wide'] = $context;
+
   return $export;
 }

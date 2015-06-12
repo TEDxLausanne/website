@@ -92,6 +92,7 @@ features[ckeditor_profile][] = CKEditor Global Profile
 features[ckeditor_profile][] = Full
 features[context][] = basic_pages
 features[context][] = homepage
+features[context][] = site_wide
 features[ctools][] = context:context:3
 features[ctools][] = field_group:field_group:1
 features[ctools][] = views:views_default:3.0
