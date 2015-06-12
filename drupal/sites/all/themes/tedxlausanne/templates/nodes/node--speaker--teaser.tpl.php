@@ -84,6 +84,7 @@ hide($content['comments']);
 hide($content['links']);
 hide($content['title']);
 hide($content['field_speaker_picture']);
+hide($content['field_talk_video']);
 ?>
 
 <!-- <a class="speaker" href="#">
@@ -103,7 +104,14 @@ hide($content['field_speaker_picture']);
   <div class="mediacard-photo">
     <?php print render($content['field_speaker_picture']); ?>
   </div>
-  <div class="btn btn-default btn-block btn-mediacard">Watch</div>
+  <div class="btn btn-default btn-block btn-mediacard">
+    <span class="has-not-video-button">
+      <?php print t('More about this talk'); ?>
+    </span>
+    <span class="has-video-button">
+      <?php print t('Watch'); ?>
+    </span>
+  </div>
   <?php print $user_picture; ?>
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>

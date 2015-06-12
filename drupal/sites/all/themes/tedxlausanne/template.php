@@ -40,6 +40,13 @@ function tedxlausanne_preprocess_node(&$variables) {
     $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__full_teaser';
   }
 
+  if($variables['node']->type == 'talk') {
+    // change button label Watch if there is a video
+    if (isset($variables['node']->field_talk_video['und'][0]['video_id'])) {
+      $variables['classes_array'][] = 'has-video';
+    }
+  }
+
   if($variables['node']->type == 'event') {
     // Load the blocks for the current context using the block reaction plugin for the current context...
     $reaction = context_get_plugin('reaction', 'block');
