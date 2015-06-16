@@ -89,7 +89,6 @@ dependencies[] = views_ui
 dependencies[] = youtube
 features[ckeditor_profile][] = Advanced
 features[ckeditor_profile][] = CKEditor Global Profile
-features[ckeditor_profile][] = Full
 features[context][] = basic_pages
 features[context][] = homepage
 features[context][] = site_wide
