@@ -207,16 +207,16 @@
             <?php print render($page['footer']); ?>
           <?php endif; ?>
           <h4>TEDXLausanne</h4>
-          <p><small>This independently organized TEDx event is operated under license from TED.</small></p>
+          <p><small><?php print t('This independently organized TEDx event is operated under license from TED.'); ?></small></p>
           <ul class="nav nav-links nav-pills uppercase">
-            <li><a href="/about-tedxlausanne">About</a></li>
+            <li><a href="/about-tedxlausanne"><?php print t('About'); ?></a></li>
             <!-- <li><a href="#">Credits</a></li> -->
           </ul>
         </div>
       </div>
       <div class="col-md-3 col-sm-5">
         <div class="footer-col">
-          <h4>Get Involved</h4>
+          <h4><?php print t('Get Involved'); ?></h4>
           <?php if (!empty($page['footer_menu'])): ?>
             <?php print render($page['footer_menu']); ?>
           <?php endif; ?>
@@ -227,19 +227,19 @@
       </div>
       <div class="col-md-4 col-sm-7">
         <div class="footer-col">
-          <h4>Newsletter</h4>
-          <p>Get in touch with us and subscribe to our newsletter</p>
+          <h4><?php print t('Newsletter'); ?></h4>
+          <p><?php print t('Get in touch with us and subscribe to our newsletter'); ?></p>
           <form class="form-inline" role="form" action="http://newsletter.tedxlausanne.org/t/d/s/jkldkj/" method="post">
             <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail2">Email address</label>
+              <label class="sr-only" for="exampleInputEmail2"><?php print t('Email address'); ?></label>
               <input id="fieldEmail" name="cm-jkldkj-jkldkj" type="email" class="form-control" placeholder="Enter email" required />
             </div>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-primary"><?php print t('Subscribe'); ?></button>
           </form>
         </div>
       </div>
       <div class="col-md-3 col-sm-5">
-        <h4>Connect with&nbsp;us</h4>
+        <h4><?php print t('Connect with&nbsp;us'); ?></h4>
         <ul class="nav-social nav nav-pills">
          <li><a href="http://www.twitter.com/TEDxLausanne"><i class="fa fa-twitter"></i><span>Twitter</span></a></a></li>
          <li><a href="https://www.facebook.com/TEDxLausanne"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
