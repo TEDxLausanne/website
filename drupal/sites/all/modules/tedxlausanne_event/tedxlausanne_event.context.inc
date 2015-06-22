@@ -20,12 +20,19 @@ function tedxlausanne_event_context_default_contexts() {
     'path' => array(
       'values' => array(
         'our-sponsors' => 'our-sponsors',
+        'nos-sponsors' => 'nos-sponsors',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-clone_of_event_sponsors-block_1' => array(
+          'module' => 'views',
+          'delta' => 'clone_of_event_sponsors-block_1',
+          'region' => 'content',
+          'weight' => '0',
+        ),
         'views-event_sponsors-block_2' => array(
           'module' => 'views',
           'delta' => 'event_sponsors-block_2',
@@ -43,12 +50,6 @@ function tedxlausanne_event_context_default_contexts() {
           'delta' => 'startup_event_sponsors-block_2',
           'region' => 'content',
           'weight' => '5',
-        ),
-        'views-clone_of_event_sponsors-block_1' => array(
-          'module' => 'views',
-          'delta' => 'clone_of_event_sponsors-block_1',
-          'region' => 'content',
-          'weight' => '0',
         ),
       ),
     ),
@@ -221,6 +222,46 @@ function tedxlausanne_event_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('Display talk of a speaker in his detail page');
   $export['speaker_talk'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'webform';
+  $context->description = '';
+  $context->tag = 'event';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'webform' => 'webform',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+    'path' => array(
+      'values' => array(
+        'event*' => 'event*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-last_event-block' => array(
+          'module' => 'views',
+          'delta' => 'last_event-block',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('event');
+  $export['webform'] = $context;
 
   return $export;
 }

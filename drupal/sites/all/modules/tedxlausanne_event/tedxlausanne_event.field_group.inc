@@ -133,6 +133,35 @@ function tedxlausanne_event_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_content|node|webform|form';
+  $field_group->group_name = 'group_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'webform';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Contenu',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_page_event',
+      1 => 'body',
+      2 => 'title',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-content field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_content|node|webform|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_display|node|event|form';
   $field_group->group_name = 'group_display';
   $field_group->entity_type = 'node';
