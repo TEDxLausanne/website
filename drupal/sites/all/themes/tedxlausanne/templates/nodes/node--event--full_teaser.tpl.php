@@ -119,7 +119,7 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
         <?php
         print render($content);
         ?>
-        <p><a href="<?php print $node_url; ?>">Read more</a></p>
+        <p><a href="<?php print $node_url; ?>"><?php print t('Read more');?></a></p>
         <div class="text-center">
           <?php print render($content['field_event_registration_link']); ?>
         </div>
