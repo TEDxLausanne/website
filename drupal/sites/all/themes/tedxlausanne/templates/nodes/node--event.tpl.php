@@ -86,6 +86,7 @@ hide($content['field_title']);
 hide($content['field_event_banner']);
 hide($content['field_event_date']);
 hide($content['field_event_location']);
+hide($content['field_event_teaser']);
 hide($content['field_event_title']);
 hide($content['field_event_registration_link']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
@@ -110,7 +111,7 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
     </div>
     <div class="row isolate">
     <div class="col-sm-8">
-            <h3><?php print $title; ?></h3>
+            <h2><?php print render($content['field_event_teaser']); ?></h2>
             <?php
             print render($content);
             ?>
