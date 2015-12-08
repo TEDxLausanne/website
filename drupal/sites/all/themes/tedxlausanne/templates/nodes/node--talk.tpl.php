@@ -124,8 +124,10 @@ hide($content['field_talk_video']);
         print render($content);
         ?>
       </div>
-      <hr>
-      <?php print render($content['field_talk_speaker']); ?>
+
+      <div class="super-isolate isolate">
+        <?php print render($content['field_talk_speaker']); ?>
+      </div>
     </div>
     <aside class="col-md-3 col-md-offset-1" role="complementary">
       <?php print render($content['field_talk_event']); ?>

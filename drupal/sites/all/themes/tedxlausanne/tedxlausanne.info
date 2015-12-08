@@ -29,7 +29,7 @@ regions[footer_menu]    = 'Footer menu'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = assets/css/style.min.css
+stylesheets[all][] = assets/css/style.css
 scripts[] = assets/js/main.js
 
 ;exclude[js][] = 'sites/all/themes/bootstrap/js/bootstrap.js'

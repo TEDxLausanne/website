@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     notify = require('gulp-notify'),
     jshint = require('gulp-jshint'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
@@ -40,7 +40,7 @@ gulp.task('styles', function() {
       .on('error', notify.onError("Error: <%= error.message %>"))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'Firefox >= 15'))
     .pipe(minifycss())
-    .pipe(rename('style.min.css'))
+    // .pipe(rename('style.min.css'))
     .pipe(gulp.dest('drupal/sites/all/themes/tedxlausanne/assets/css'));
 });
 

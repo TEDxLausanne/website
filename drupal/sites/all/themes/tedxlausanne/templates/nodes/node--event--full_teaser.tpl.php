@@ -112,6 +112,7 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
       </div>
     </div>
   </a>
+<?php /*
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -126,4 +127,6 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
       </div>
     </div>
   </div>
+  */
+  ?>
 </div>
