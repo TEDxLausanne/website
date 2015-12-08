@@ -531,8 +531,8 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['label'] = 'Watch more talk';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<div class="row">
-    <div class="col-xs-12 text-center">
-        <a href="/watch" class="btn btn-default isolated btn-lg">Watch more talks</a>
+    <div class="col-xs-12 text-center isolated">
+        <a href="/watch" class="btn btn-default isolated">Watch more talks</a>
     </div>
 </div>';
   /* Field: Content: Title */
@@ -582,8 +582,8 @@ function tedxlausanne_event_views_default_views() {
     t('Desc'),
     t('Watch more talk'),
     t('<div class="row">
-    <div class="col-xs-12 text-center">
-        <a href="/watch" class="btn btn-default isolated btn-lg">Watch more talks</a>
+    <div class="col-xs-12 text-center isolated">
+        <a href="/watch" class="btn btn-default isolated">Watch more talks</a>
     </div>
 </div>'),
     t('Block'),
