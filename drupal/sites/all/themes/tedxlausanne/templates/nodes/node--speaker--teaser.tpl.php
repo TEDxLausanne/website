@@ -106,10 +106,10 @@ hide($content['field_talk_video']);
   </div>
   <div class="btn btn-default btn-block btn-mediacard">
     <span class="has-not-video-button">
-      <?php print t('More about this talk'); ?>
+      
     </span>
     <span class="has-video-button">
-      <?php print t('Watch'); ?>
+      ▶︎
     </span>
   </div>
   <?php print $user_picture; ?>

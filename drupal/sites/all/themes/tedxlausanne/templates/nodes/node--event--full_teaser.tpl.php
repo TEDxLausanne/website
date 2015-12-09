@@ -91,7 +91,7 @@ hide($content['field_event_title']);
 hide($content['field_event_registration_link']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
-<div id="node-<?php print $node->nid; ?>" class="clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="event-full-teaser clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
   <a href="<?php print $node_url; ?>">
     <?php if ($display_submitted): ?>
       <div class="submitted">

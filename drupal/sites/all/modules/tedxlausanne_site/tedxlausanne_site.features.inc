@@ -99,7 +99,7 @@ function tedxlausanne_site_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1600,
-          'height' => 300,
+          'height' => 450,
         ),
         'weight' => 1,
       ),
@@ -110,11 +110,11 @@ function tedxlausanne_site_image_default_styles() {
   $styles['mini_banner'] = array(
     'label' => 'Mini banner',
     'effects' => array(
-      1 => array(
+      3 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 360,
-          'height' => 120,
+          'height' => 300,
         ),
         'weight' => 1,
       ),
