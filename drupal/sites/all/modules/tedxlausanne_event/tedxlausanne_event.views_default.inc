@@ -658,6 +658,8 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Full block */
   $handler = $view->new_display('block', 'Full block', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'semanticviews_default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -688,6 +690,7 @@ function tedxlausanne_event_views_default_views() {
     t('Block'),
     t('Related event'),
     t('Full block'),
+    t('<none>'),
     t('Event bloc'),
   );
   $export['last_event'] = $view;
