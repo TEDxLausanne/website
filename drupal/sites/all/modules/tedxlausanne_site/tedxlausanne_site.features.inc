@@ -106,6 +106,21 @@ function tedxlausanne_site_image_default_styles() {
     ),
   );
 
+  // Exported image style: big_banner.
+  $styles['big_banner'] = array(
+    'label' => 'Big Banner',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1600,
+          'height' => 600,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: mini_banner.
   $styles['mini_banner'] = array(
     'label' => 'Mini banner',
