@@ -602,7 +602,7 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['title'] = 'Next event';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -665,9 +665,20 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'full_teaser';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+
+  /* Display: Event bloc */
+  $handler = $view->new_display('block', 'Event bloc', 'block_2');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
+  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['view_mode'] = 'full_teaser';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $translatables['last_event'] = array(
     t('Master'),
-    t('<none>'),
+    t('Next event'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -677,6 +688,7 @@ function tedxlausanne_event_views_default_views() {
     t('Block'),
     t('Related event'),
     t('Full block'),
+    t('Event bloc'),
   );
   $export['last_event'] = $view;
 

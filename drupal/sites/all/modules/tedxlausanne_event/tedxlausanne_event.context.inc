@@ -137,10 +137,10 @@ function tedxlausanne_event_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-last_event-block_1' => array(
+        'views-last_event-block_2' => array(
           'module' => 'views',
-          'delta' => 'last_event-block_1',
-          'region' => 'full_header',
+          'delta' => 'last_event-block_2',
+          'region' => 'highlighted',
           'weight' => '-10',
         ),
       ),

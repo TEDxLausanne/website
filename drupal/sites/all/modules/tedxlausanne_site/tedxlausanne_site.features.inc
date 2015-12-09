@@ -114,7 +114,7 @@ function tedxlausanne_site_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 360,
-          'height' => 300,
+          'height' => 240,
         ),
         'weight' => 1,
       ),

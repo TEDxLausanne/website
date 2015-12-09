@@ -92,41 +92,35 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
 <div href="<?php print $node_url; ?>"  id="node-<?php print $node->nid; ?>" class="clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
 
- <a href="<?php print $node_url; ?>"  class="mediacard">
+ <a href="<?php print $node_url; ?>"  class="event_teaser">
 
-
-   <div class="shadow-left">
-    <div class="shadow-right">
-      <div class="mediacard-photo">
-        <?php print render($content['field_event_banner']); ?>
-      </div>
-      <div class="btn btn-default btn-block btn-mediacard"><?php print render($content['field_event_title']); ?></div>
-      <?php print render($title_prefix); ?>
-      <?php if (!$page): ?>
-        <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-
-      <?php if ($display_submitted): ?>
-        <div class="submitted">
-          <?php print $submitted; ?>
+      <div class="event_photo" style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>');">
+        <div class="event_date">
+           <?php print render($content['field_event_date']); ?>
         </div>
-      <?php endif; ?>
-
-      <div class="content"<?php print $content_attributes; ?>>
-        <p>
-        <?php
-        print render($content);
-        ?>
-        </p>
-
-        <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
-
+        <div class="event_title">
+          <?php print render($title_prefix); ?>
+          <?php if (!$page): ?>
+            <h4<?php print $title_attributes; ?>><?php print $title; ?></h4>
+          <?php endif; ?>
+          <?php print render($title_suffix); ?>
+        </div>
+        <div class="event_location">
+          <?php print render($content['field_event_location']); ?>
+        </div>
+      </div>
+      <div class="event_content">
+        <?php if ($display_submitted): ?>
+          <div class="submitted">
+            <?php print $submitted; ?>
+          </div>
+        <?php endif; ?>
+        <div class="content"<?php print $content_attributes; ?>>
+          <h3><?php print render($content['field_event_title']); ?></h3>
+          <?php
+          print render($content);
+          ?>
       </div>
     </div>
-  </div>
-</a>
-<div class="text-center">
-  <?php print render($content['field_event_registration_link']); ?>
-</div>
+  </a>
 </div>

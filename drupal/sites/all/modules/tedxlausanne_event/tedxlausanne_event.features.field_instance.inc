@@ -99,7 +99,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'banner',
+          'image_style' => 'big_banner',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -127,8 +127,8 @@ function tedxlausanne_event_field_default_field_instances() {
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '3000x1000',
-      'min_resolution' => '1200x300',
+      'max_resolution' => '3000x2000',
+      'min_resolution' => '1200x500',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -136,7 +136,7 @@ function tedxlausanne_event_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'banner',
+        'preview_image_style' => 'large',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',

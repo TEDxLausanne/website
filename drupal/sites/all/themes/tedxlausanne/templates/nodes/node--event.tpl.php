@@ -117,8 +117,10 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
             ?>
     </div>
     <div class="col-sm-4">
-        <h3>Date and location</h3>
-        <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
+        <h3>Date</h3>
+        <p><?php print render($content['field_event_date']); ?></p>
+        <h3>location</h3>
+        <p><?php print render($content['field_event_location']); ?></p>
         <hr>
         <?php print render($content['field_event_registration_link']); ?>
 
