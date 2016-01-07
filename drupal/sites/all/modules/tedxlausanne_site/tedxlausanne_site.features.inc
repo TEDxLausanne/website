@@ -151,6 +151,21 @@ function tedxlausanne_site_image_default_styles() {
     ),
   );
 
+  // Exported image style: speaker_photo.
+  $styles['speaker_photo'] = array(
+    'label' => 'speaker photo',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 444,
+          'height' => 480,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 

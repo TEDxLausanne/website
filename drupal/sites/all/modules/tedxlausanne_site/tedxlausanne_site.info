@@ -139,6 +139,7 @@ features[image][] = banner
 features[image][] = big_banner
 features[image][] = mini_banner
 features[image][] = profile
+features[image][] = speaker_photo
 features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-menu
 features[node][] = page
