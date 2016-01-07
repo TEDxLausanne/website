@@ -92,26 +92,29 @@ hide($content['field_event_registration_link']);
 $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="event-full-teaser clearfix isolate <?php print $classes; ?>" <?php print $attributes; ?>>
-  <a href="<?php print $node_url; ?>">
-    <?php if ($display_submitted): ?>
-      <div class="submitted">
-        <?php print $submitted; ?>
+    <a href="<?php print $node_url; ?>">
+      <?php if ($display_submitted): ?>
+        <div class="submitted">
+          <?php print $submitted; ?>
+        </div>
+      <?php endif; ?>
+      <div class="content"<?php print $content_attributes; ?>>
+        <div class="banner banner-dark banner-main" style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>');">
+            <div class="text-center">
+              <h3><?php print render($content['field_event_title']); ?></h3>
+              <?php print render($title_prefix); ?>
+              <?php if (!$page): ?>
+                <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
+              <?php endif; ?>
+              <?php print render($title_suffix); ?>
+              <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
+            </div>
+        </div>
       </div>
-    <?php endif; ?>
-    <div class="content"<?php print $content_attributes; ?>>
-      <div class="banner banner-dark banner-main" style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>');">
-          <div class="text-center">
-            <h3><?php print render($content['field_event_title']); ?></h3>
-            <?php print render($title_prefix); ?>
-            <?php if (!$page): ?>
-              <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
-            <?php endif; ?>
-            <?php print render($title_suffix); ?>
-            <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
-          </div>
-      </div>
+    </a>
+    <div class="text-center event-full-teaser-cta">
+      <?php print render($content['field_event_registration_link']); ?>
     </div>
-  </a>
 <?php /*
   <div class="container">
     <div class="row">
