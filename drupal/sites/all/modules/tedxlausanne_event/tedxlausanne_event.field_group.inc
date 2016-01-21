@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function tedxlausanne_event_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -39,7 +39,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_basic|node|event|form'] = $field_group;
+  $field_groups['group_basic|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -68,7 +68,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_basic|node|speaker|form'] = $field_group;
+  $field_groups['group_basic|node|speaker|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -98,7 +98,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_basic|node|sponsor|form'] = $field_group;
+  $field_groups['group_basic|node|sponsor|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -128,7 +128,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_basic|node|talk|form'] = $field_group;
+  $field_groups['group_basic|node|talk|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -157,7 +157,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_content|node|webform|form'] = $field_group;
+  $field_groups['group_content|node|webform|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -184,7 +184,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_display|node|event|form'] = $field_group;
+  $field_groups['group_display|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -211,7 +211,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_event|node|sponsor|form'] = $field_group;
+  $field_groups['group_event|node|sponsor|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -238,7 +238,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_event|node|talk|form'] = $field_group;
+  $field_groups['group_event|node|talk|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -265,7 +265,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_media|node|speaker|form'] = $field_group;
+  $field_groups['group_media|node|speaker|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -292,7 +292,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_media|node|sponsor|form'] = $field_group;
+  $field_groups['group_media|node|sponsor|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -319,7 +319,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_media|node|talk|form'] = $field_group;
+  $field_groups['group_media|node|talk|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -348,7 +348,7 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_practical|node|event|form'] = $field_group;
+  $field_groups['group_practical|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -375,7 +375,17 @@ function tedxlausanne_event_field_group_info() {
       ),
     ),
   );
-  $export['group_talks|node|event|form'] = $field_group;
+  $field_groups['group_talks|node|event|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Basic informations');
+  t('Contenu');
+  t('Display');
+  t('Media');
+  t('Practical informations');
+  t('Related to event');
+  t('talks');
+
+  return $field_groups;
 }

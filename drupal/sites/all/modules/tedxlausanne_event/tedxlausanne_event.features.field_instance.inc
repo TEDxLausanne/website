@@ -707,7 +707,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'large',
+          'image_style' => 'speaker_photo',
         ),
         'type' => 'image',
         'weight' => 0,
