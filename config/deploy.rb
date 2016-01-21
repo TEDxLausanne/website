@@ -19,7 +19,7 @@ set :use_sudo,       false
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-set :download_drush, false
+set :download_drush, true
 
 role :app,           domain
 role :db,            domain
