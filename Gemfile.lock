@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    capdrupal (0.9.6)
+    capdrupal (0.11.0)
       capistrano (~> 2.13, >= 2.13.4)
       railsless-deploy (~> 1.1, >= 1.1.2)
     capistrano (2.15.5)
@@ -24,6 +24,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capdrupal
+  capdrupal (~> 0.11.0)
   capistrano (~> 2.15.5)
   railsless-deploy
+
+BUNDLED WITH
+   1.10.6
