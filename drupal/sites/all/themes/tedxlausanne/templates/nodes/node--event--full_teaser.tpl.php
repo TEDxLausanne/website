@@ -100,20 +100,31 @@ $file_event_banner = file_load($node->field_event_banner['und'][0]['fid']);
       <?php endif; ?>
       <div class="content"<?php print $content_attributes; ?>>
         <div class="banner banner-dark banner-main" style="background-image:url('<?php print file_create_url($file_event_banner->uri); ?>');">
-            <div class="text-center">
-              <h3><?php print render($content['field_event_title']); ?></h3>
-              <?php print render($title_prefix); ?>
-              <?php if (!$page): ?>
-                <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
-              <?php endif; ?>
-              <?php print render($title_suffix); ?>
-              <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                    <h3><?php print render($content['field_event_title']); ?></h3>
+                    <?php print render($title_prefix); ?>
+                    <?php if (!$page): ?>
+                      <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
+                    <?php endif; ?>
+                    <?php print render($title_suffix); ?>
+                    <p><?php print render($content['field_event_date']); ?> – <?php print render($content['field_event_location']); ?></p>
+                    <p><u><?php print t('Read more');?></u></p>
+                </div>
+              </div>
             </div>
         </div>
       </div>
     </a>
-    <div class="text-center event-full-teaser-cta">
-      <?php print render($content['field_event_registration_link']); ?>
+    <div class="event-full-teaser-cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <?php print render($content['field_event_registration_link']); ?>
+          </div>
+        </div>
+      </div>
     </div>
 <?php /*
   <div class="container">
