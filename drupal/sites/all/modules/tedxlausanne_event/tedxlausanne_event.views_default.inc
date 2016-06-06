@@ -798,7 +798,7 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Startup sponsors';
+  $handler->display->display_options['title'] = 'Bronze - Startup Sponsors';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -864,7 +864,7 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $translatables['startup_event_sponsors'] = array(
     t('Master'),
-    t('Startup sponsors'),
+    t('Bronze - Startup Sponsors'),
     t('more'),
     t('Apply'),
     t('Reset'),

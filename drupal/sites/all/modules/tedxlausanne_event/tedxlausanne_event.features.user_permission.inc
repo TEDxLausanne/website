@@ -15,6 +15,8 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'access all webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -24,6 +26,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'access own webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -33,6 +36,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'access own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -51,6 +55,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'delete all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -60,6 +65,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'delete own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -69,6 +75,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'edit all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -78,6 +85,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'edit own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
@@ -87,6 +95,7 @@ function tedxlausanne_event_user_default_permissions() {
     'name' => 'edit webform components',
     'roles' => array(
       'administrator' => 'administrator',
+      'super user' => 'super user',
     ),
     'module' => 'webform',
   );
