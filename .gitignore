@@ -2,6 +2,7 @@
 sites/*/settings*.php
 sites/*/private
 private
+drupal/tmp
 
 # Ignore paths that contain user-generated content.
 private-files
