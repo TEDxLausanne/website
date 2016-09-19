@@ -10,7 +10,7 @@
 function tedxlausanne_site_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -33,7 +33,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'comment_body'
+  // Exported field_base: 'comment_body'.
   $field_bases['comment_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -56,7 +56,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_bio'
+  // Exported field_base: 'field_bio'.
   $field_bases['field_bio'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -77,7 +77,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_full_name'
+  // Exported field_base: 'field_full_name'.
   $field_bases['field_full_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -99,7 +99,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_function'
+  // Exported field_base: 'field_function'.
   $field_bases['field_function'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -127,7 +127,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_image'
+  // Exported field_base: 'field_image'.
   $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -152,7 +152,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_links'
+  // Exported field_base: 'field_links'.
   $field_bases['field_links'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -182,7 +182,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_page_event'
+  // Exported field_base: 'field_page_event'.
   $field_bases['field_page_event'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -218,7 +218,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_page_highlight'
+  // Exported field_base: 'field_page_highlight'.
   $field_bases['field_page_highlight'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -244,7 +244,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_page_image'
+  // Exported field_base: 'field_page_image'.
   $field_bases['field_page_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -269,7 +269,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_picture'
+  // Exported field_base: 'field_picture'.
   $field_bases['field_picture'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -294,7 +294,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_tags'
+  // Exported field_base: 'field_tags'.
   $field_bases['field_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -322,7 +322,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_team'
+  // Exported field_base: 'field_team'.
   $field_bases['field_team'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -350,7 +350,7 @@ function tedxlausanne_site_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'title_field'
+  // Exported field_base: 'title_field'.
   $field_bases['title_field'] = array(
     'active' => 1,
     'cardinality' => 1,

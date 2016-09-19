@@ -10,7 +10,245 @@
 function tedxlausanne_site_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'comment-comment_node_article-comment_body'.
+  $field_instances['comment-comment_node_article-comment_body'] = array(
+    'bundle' => 'comment_node_article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_event-comment_body'.
+  $field_instances['comment-comment_node_event-comment_body'] = array(
+    'bundle' => 'comment_node_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_page-comment_body'.
+  $field_instances['comment-comment_node_page-comment_body'] = array(
+    'bundle' => 'comment_node_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_speaker-comment_body'.
+  $field_instances['comment-comment_node_speaker-comment_body'] = array(
+    'bundle' => 'comment_node_speaker',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_sponsor-comment_body'.
+  $field_instances['comment-comment_node_sponsor-comment_body'] = array(
+    'bundle' => 'comment_node_sponsor',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_talk-comment_body'.
+  $field_instances['comment-comment_node_talk-comment_body'] = array(
+    'bundle' => 'comment_node_talk',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_webform-comment_body'.
+  $field_instances['comment-comment_node_webform-comment_body'] = array(
+    'bundle' => 'comment_node_webform',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -61,7 +299,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_page_event'
+  // Exported field_instance: 'node-page-field_page_event'.
   $field_instances['node-page-field_page_event'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -104,7 +342,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_page_highlight'
+  // Exported field_instance: 'node-page-field_page_highlight'.
   $field_instances['node-page-field_page_highlight'] = array(
     'bundle' => 'page',
     'default_value' => array(
@@ -152,7 +390,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_page_image'
+  // Exported field_instance: 'node-page-field_page_image'.
   $field_instances['node-page-field_page_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -209,7 +447,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-title_field'
+  // Exported field_instance: 'node-page-title_field'.
   $field_instances['node-page-title_field'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -258,7 +496,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_bio'
+  // Exported field_instance: 'user-user-field_bio'.
   $field_instances['user-user-field_bio'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -302,7 +540,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_full_name'
+  // Exported field_instance: 'user-user-field_full_name'.
   $field_instances['user-user-field_full_name'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -344,7 +582,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_function'
+  // Exported field_instance: 'user-user-field_function'.
   $field_instances['user-user-field_function'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -383,7 +621,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_links'
+  // Exported field_instance: 'user-user-field_links'.
   $field_instances['user-user-field_links'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -441,7 +679,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_picture'
+  // Exported field_instance: 'user-user-field_picture'.
   $field_instances['user-user-field_picture'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -496,7 +734,7 @@ function tedxlausanne_site_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_team'
+  // Exported field_instance: 'user-user-field_team'.
   $field_instances['user-user-field_team'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -539,6 +777,7 @@ function tedxlausanne_site_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Bio');
   t('Body');
+  t('Comment');
   t('Event');
   t('Featured on homepage');
   t('Full name');
