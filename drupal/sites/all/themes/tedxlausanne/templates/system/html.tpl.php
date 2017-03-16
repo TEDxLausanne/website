@@ -72,6 +72,8 @@
   <meta name="twitter:title" content="">
   <meta name="twitter:url" content="">
 
+  <meta name="google-site-verification" content="a9cFLG5RY_XwuFvAdTFhqjTy3yrAZd0sahnpsNVkZVE" />
+
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
   <?php print $head; ?>
