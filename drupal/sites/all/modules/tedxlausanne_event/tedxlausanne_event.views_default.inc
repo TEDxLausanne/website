@@ -509,7 +509,7 @@ function tedxlausanne_event_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Featured talks';
+  $handler->display->display_options['title'] = 'Past event talks';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -573,7 +573,7 @@ function tedxlausanne_event_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $translatables['homepage_speaker'] = array(
     t('Master'),
-    t('Featured talks'),
+    t('Past event talks'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -611,7 +611,12 @@ function tedxlausanne_event_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['style_options']['columns_horizontal'] = '-1';
+  $handler->display->display_options['style_options']['columns_vertical'] = '4';
+  $handler->display->display_options['style_options']['columns_xs'] = '12';
+  $handler->display->display_options['style_options']['columns_sm'] = '0';
+  $handler->display->display_options['style_options']['columns_md'] = '0';
+  $handler->display->display_options['style_options']['columns_lg'] = '0';
   $handler->display->display_options['row_plugin'] = 'node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -672,7 +677,12 @@ function tedxlausanne_event_views_default_views() {
   $handler = $view->new_display('block', 'Event bloc', 'block_2');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
-  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['style_options']['columns_horizontal'] = '-1';
+  $handler->display->display_options['style_options']['columns_vertical'] = '4';
+  $handler->display->display_options['style_options']['columns_xs'] = '12';
+  $handler->display->display_options['style_options']['columns_sm'] = '0';
+  $handler->display->display_options['style_options']['columns_md'] = '0';
+  $handler->display->display_options['style_options']['columns_lg'] = '0';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'node';

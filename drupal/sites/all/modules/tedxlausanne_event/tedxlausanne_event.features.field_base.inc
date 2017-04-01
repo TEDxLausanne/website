@@ -10,7 +10,7 @@
 function tedxlausanne_event_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_event_banner'
+  // Exported field_base: 'field_event_banner'.
   $field_bases['field_event_banner'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -35,7 +35,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_event_date'
+  // Exported field_base: 'field_event_date'.
   $field_bases['field_event_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -65,7 +65,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_event_highlight'
+  // Exported field_base: 'field_event_highlight'.
   $field_bases['field_event_highlight'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -91,7 +91,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_event_location'
+  // Exported field_base: 'field_event_location'.
   $field_bases['field_event_location'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -112,7 +112,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_event_registration_link'
+  // Exported field_base: 'field_event_registration_link'.
   $field_bases['field_event_registration_link'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -142,7 +142,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_event_talks'
+  // Exported field_base: 'field_event_talks'.
   $field_bases['field_event_talks'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -178,7 +178,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_event_teaser'
+  // Exported field_base: 'field_event_teaser'.
   $field_bases['field_event_teaser'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -200,7 +200,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_event_title'
+  // Exported field_base: 'field_event_title'.
   $field_bases['field_event_title'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -222,7 +222,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_speaker_links'
+  // Exported field_base: 'field_speaker_links'.
   $field_bases['field_speaker_links'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -252,7 +252,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_speaker_picture'
+  // Exported field_base: 'field_speaker_picture'.
   $field_bases['field_speaker_picture'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -277,7 +277,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_sponsor_event'
+  // Exported field_base: 'field_sponsor_event'.
   $field_bases['field_sponsor_event'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -313,7 +313,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_sponsor_level'
+  // Exported field_base: 'field_sponsor_level'.
   $field_bases['field_sponsor_level'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -341,7 +341,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_sponsor_links'
+  // Exported field_base: 'field_sponsor_links'.
   $field_bases['field_sponsor_links'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -371,7 +371,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_sponsor_logo'
+  // Exported field_base: 'field_sponsor_logo'.
   $field_bases['field_sponsor_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -396,7 +396,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_talk_event'
+  // Exported field_base: 'field_talk_event'.
   $field_bases['field_talk_event'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -434,7 +434,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_talk_highlight'
+  // Exported field_base: 'field_talk_highlight'.
   $field_bases['field_talk_highlight'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -460,7 +460,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_talk_speaker'
+  // Exported field_base: 'field_talk_speaker'.
   $field_bases['field_talk_speaker'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -491,7 +491,7 @@ function tedxlausanne_event_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_talk_video'
+  // Exported field_base: 'field_talk_video'.
   $field_bases['field_talk_video'] = array(
     'active' => 1,
     'cardinality' => 1,

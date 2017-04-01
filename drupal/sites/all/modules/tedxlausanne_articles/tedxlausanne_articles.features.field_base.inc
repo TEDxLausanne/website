@@ -10,7 +10,7 @@
 function tedxlausanne_articles_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_article_event'
+  // Exported field_base: 'field_article_event'.
   $field_bases['field_article_event'] = array(
     'active' => 1,
     'cardinality' => 1,

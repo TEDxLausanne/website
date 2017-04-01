@@ -103,9 +103,9 @@ function tedxlausanne_site_context_default_contexts() {
   $context->description = '';
   $context->tag = '';
   $context->conditions = array(
-    'context' => array(
+    'sitewide' => array(
       'values' => array(
-        '*' => '*',
+        1 => 1,
       ),
     ),
   );

@@ -10,7 +10,7 @@
 function tedxlausanne_articles_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-body'
+  // Exported field_instance: 'node-article-body'.
   $field_instances['node-article-body'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function tedxlausanne_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_event'
+  // Exported field_instance: 'node-article-field_article_event'.
   $field_instances['node-article-field_article_event'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -73,6 +73,7 @@ function tedxlausanne_articles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -108,7 +109,7 @@ function tedxlausanne_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_image'
+  // Exported field_instance: 'node-article-field_image'.
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
     'deleted' => 0,
@@ -169,7 +170,7 @@ function tedxlausanne_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_tags'
+  // Exported field_instance: 'node-article-field_tags'.
   $field_instances['node-article-field_tags'] = array(
     'bundle' => 'article',
     'default_value' => NULL,

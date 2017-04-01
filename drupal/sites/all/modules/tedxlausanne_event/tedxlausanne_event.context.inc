@@ -238,11 +238,6 @@ function tedxlausanne_event_context_default_contexts() {
         'node_form' => '1',
       ),
     ),
-    'path' => array(
-      'values' => array(
-        'event*' => 'event*',
-      ),
-    ),
   );
   $context->reactions = array(
     'block' => array(

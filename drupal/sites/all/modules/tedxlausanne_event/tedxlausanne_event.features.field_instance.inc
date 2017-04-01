@@ -10,7 +10,7 @@
 function tedxlausanne_event_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-event-body'
+  // Exported field_instance: 'node-event-body'.
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -68,7 +68,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_banner'
+  // Exported field_instance: 'node-event-field_event_banner'.
   $field_instances['node-event-field_event_banner'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -144,7 +144,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_date'
+  // Exported field_instance: 'node-event-field_event_date'.
   $field_instances['node-event-field_event_date'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -159,6 +159,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 4,
@@ -172,6 +173,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 3,
@@ -185,6 +187,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 2,
@@ -198,6 +201,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 3,
@@ -233,7 +237,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_highlight'
+  // Exported field_instance: 'node-event-field_event_highlight'.
   $field_instances['node-event-field_event_highlight'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -283,7 +287,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_location'
+  // Exported field_instance: 'node-event-field_event_location'.
   $field_instances['node-event-field_event_location'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -340,7 +344,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_registration_link'
+  // Exported field_instance: 'node-event-field_event_registration_link'.
   $field_instances['node-event-field_event_registration_link'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -413,7 +417,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_talks'
+  // Exported field_instance: 'node-event-field_event_talks'.
   $field_instances['node-event-field_event_talks'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -460,7 +464,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_teaser'
+  // Exported field_instance: 'node-event-field_event_teaser'.
   $field_instances['node-event-field_event_teaser'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -517,7 +521,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_title'
+  // Exported field_instance: 'node-event-field_event_title'.
   $field_instances['node-event-field_event_title'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -567,7 +571,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-body'
+  // Exported field_instance: 'node-speaker-body'.
   $field_instances['node-speaker-body'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -617,7 +621,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_speaker_links'
+  // Exported field_instance: 'node-speaker-field_speaker_links'.
   $field_instances['node-speaker-field_speaker_links'] = array(
     'bundle' => 'speaker',
     'default_value' => NULL,
@@ -680,7 +684,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-speaker-field_speaker_picture'
+  // Exported field_instance: 'node-speaker-field_speaker_picture'.
   $field_instances['node-speaker-field_speaker_picture'] = array(
     'bundle' => 'speaker',
     'deleted' => 0,
@@ -741,7 +745,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-body'
+  // Exported field_instance: 'node-sponsor-body'.
   $field_instances['node-sponsor-body'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -792,7 +796,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_event'
+  // Exported field_instance: 'node-sponsor-field_sponsor_event'.
   $field_instances['node-sponsor-field_sponsor_event'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -804,6 +808,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -840,7 +845,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_level'
+  // Exported field_instance: 'node-sponsor-field_sponsor_level'.
   $field_instances['node-sponsor-field_sponsor_level'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -885,7 +890,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_links'
+  // Exported field_instance: 'node-sponsor-field_sponsor_links'.
   $field_instances['node-sponsor-field_sponsor_links'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -949,7 +954,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_logo'
+  // Exported field_instance: 'node-sponsor-field_sponsor_logo'.
   $field_instances['node-sponsor-field_sponsor_logo'] = array(
     'bundle' => 'sponsor',
     'deleted' => 0,
@@ -1015,7 +1020,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-talk-body'
+  // Exported field_instance: 'node-talk-body'.
   $field_instances['node-talk-body'] = array(
     'bundle' => 'talk',
     'default_value' => NULL,
@@ -1077,7 +1082,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-talk-field_talk_event'
+  // Exported field_instance: 'node-talk-field_talk_event'.
   $field_instances['node-talk-field_talk_event'] = array(
     'bundle' => 'talk',
     'default_value' => NULL,
@@ -1089,6 +1094,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -1143,7 +1149,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-talk-field_talk_highlight'
+  // Exported field_instance: 'node-talk-field_talk_highlight'.
   $field_instances['node-talk-field_talk_highlight'] = array(
     'bundle' => 'talk',
     'default_value' => array(
@@ -1191,7 +1197,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-talk-field_talk_speaker'
+  // Exported field_instance: 'node-talk-field_talk_speaker'.
   $field_instances['node-talk-field_talk_speaker'] = array(
     'bundle' => 'talk',
     'default_value' => NULL,
@@ -1203,6 +1209,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
@@ -1237,6 +1244,7 @@ function tedxlausanne_event_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -1264,7 +1272,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-talk-field_talk_video'
+  // Exported field_instance: 'node-talk-field_talk_video'.
   $field_instances['node-talk-field_talk_video'] = array(
     'bundle' => 'talk',
     'default_value' => NULL,
@@ -1280,6 +1288,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'youtube_controls' => 0,
           'youtube_height' => '',
           'youtube_iv_load_policy' => 0,
+          'youtube_loop' => FALSE,
           'youtube_showinfo' => 1,
           'youtube_size' => 'responsive',
           'youtube_width' => '',
@@ -1296,6 +1305,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'youtube_controls' => FALSE,
           'youtube_height' => NULL,
           'youtube_iv_load_policy' => FALSE,
+          'youtube_loop' => FALSE,
           'youtube_showinfo' => FALSE,
           'youtube_size' => '420x315',
           'youtube_width' => NULL,
@@ -1318,6 +1328,7 @@ function tedxlausanne_event_field_default_field_instances() {
           'youtube_controls' => FALSE,
           'youtube_height' => NULL,
           'youtube_iv_load_policy' => FALSE,
+          'youtube_loop' => FALSE,
           'youtube_showinfo' => FALSE,
           'youtube_size' => '420x315',
           'youtube_width' => NULL,
@@ -1349,7 +1360,7 @@ function tedxlausanne_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-webform-body'
+  // Exported field_instance: 'node-webform-body'.
   $field_instances['node-webform-body'] = array(
     'bundle' => 'webform',
     'default_value' => NULL,
@@ -1370,9 +1381,12 @@ function tedxlausanne_event_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 150,
+        ),
+        'type' => 'text_trimmed',
         'weight' => 0,
       ),
     ),
@@ -1395,12 +1409,56 @@ function tedxlausanne_event_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => -4,
     ),
   );
 
-  // Exported field_instance: 'node-webform-field_page_event'
+  // Exported field_instance: 'node-webform-field_page_event'.
   $field_instances['node-webform-field_page_event'] = array(
+    'bundle' => 'webform',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_page_event',
+    'label' => 'Event',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-webform-field_page_highlight'.
+  $field_instances['node-webform-field_page_highlight'] = array(
     'bundle' => 'webform',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1422,13 +1480,13 @@ function tedxlausanne_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_page_event',
-    'label' => 'Event',
+    'fences_wrapper' => 'div_div_div',
+    'field_name' => 'field_page_highlight',
+    'label' => 'Featured on homepage',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -1439,7 +1497,56 @@ function tedxlausanne_event_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-webform-title_field'.
+  $field_instances['node-webform-title_field'] = array(
+    'bundle' => 'webform',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'full_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Titre',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
     ),
   );
 
@@ -1466,6 +1573,7 @@ function tedxlausanne_event_field_default_field_instances() {
   t('Talk speaker');
   t('Talk video');
   t('Teaser');
+  t('Titre');
   t('Upload a squared image');
   t('talks');
 

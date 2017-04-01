@@ -145,7 +145,7 @@ function tedxlausanne_event_field_group_info() {
     'children' => array(
       0 => 'field_page_event',
       1 => 'body',
-      2 => 'title',
+      2 => 'title_field',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

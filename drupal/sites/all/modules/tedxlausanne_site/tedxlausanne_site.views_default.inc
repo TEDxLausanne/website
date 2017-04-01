@@ -60,6 +60,7 @@ function tedxlausanne_site_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'page' => 'page',
+    'webform' => 'webform',
   );
   /* Filter criterion: Content: Featured on homepage (field_page_highlight) */
   $handler->display->display_options['filters']['field_page_highlight_value']['id'] = 'field_page_highlight_value';
